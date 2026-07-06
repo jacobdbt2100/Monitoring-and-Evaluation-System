@@ -1,6 +1,6 @@
 # Monitoring and Evaluation System for a Smallholder Farm Productivity Programme
 
-## Problem Statement
+## 1.0 Problem Statement
 
 Smallholder farmers play a significant role in agricultural production, yet many face challenges that limit productivity and household income. These challenges include limited access to quality farm inputs, inadequate technical knowledge, poor adoption of improved farming practices, pests and diseases, and inconsistent extension support.
 
@@ -18,7 +18,7 @@ Without a structured monitoring and evaluation system, it becomes difficult to:
 
 This project develops an end-to-end monitoring and evaluation system that uses CommCare for digital data collection and case management, Python for data cleaning and transformation, PostgreSQL for data storage, Excel for operational analysis, and Power BI for executive reporting. The system enables programme managers to monitor activities, measure outcomes, evaluate programme performance, and make data-driven decisions to improve future interventions.
 
-## Programme Background
+## 2.0 Programme Background
 
 The **Smallholder Farm Productivity Programme (SFPP)** is a fictional agricultural development programme designed for this portfolio project. It aims to improve the productivity and livelihoods of smallholder farming households by increasing access to agricultural knowledge, quality farm inputs, and extension support.
 
@@ -28,7 +28,7 @@ To ensure effective implementation, programme staff regularly collect data on be
 
 The programme recognises that successful implementation depends not only on delivering activities but also on measuring whether those activities lead to meaningful improvements in farming practices, agricultural productivity, household income, and food security. An integrated monitoring and evaluation system is therefore required to support routine monitoring, performance reporting, and evidence-based decision-making.
 
-## Programme Summary
+## 3.0 Programme Summary
 
 | Item                     | Description                                            |
 | ------------------------ | ------------------------------------------------------ |
@@ -46,13 +46,13 @@ The programme recognises that successful implementation depends not only on deli
 | Operational Analysis     | Excel                                                  |
 | Executive Reporting      | Power BI                                               |
 
-## Implementing Organisation
+## 4.0 Implementing Organisation
 
 The Green Harvest Initiative (GHI) is a fictional non-governmental organisation implementing the Smallholder Farm Productivity Programme (SFPP). The organisation works with rural farming communities to improve agricultural productivity, strengthen household livelihoods, and promote sustainable farming practices through training, input support, and extension services.
 
 To manage programme implementation effectively, GHI requires a robust Monitoring and Evaluation (M&E) system that supports digital data collection, case management, performance monitoring, and evidence-based reporting.
 
-## Stakeholders and their Information Needs
+## 5.0 Stakeholders and their Information Needs
 
 | Stakeholder                      | Role                                         | Information Needed                                                    |
 | -------------------------------- | -------------------------------------------- | --------------------------------------------------------------------- |
@@ -67,11 +67,11 @@ To manage programme implementation effectively, GHI requires a robust Monitoring
 | Donors                           | Provide programme funding                    | Programme outputs, outcomes, impact, accountability reports           |
 | Organisation Management          | Strategic oversight                          | Executive summaries, trends, risks, programme success                 |
 
-## Programme Goal
+## 6.0 Programme Goal
 
 To improve the productivity, resilience, and livelihoods of smallholder farming households through increased access to agricultural knowledge, quality farm inputs, and continuous extension support.
 
-## Programme Objectives
+## 7.0 Programme Objectives
 
 The programme aims to:
 
@@ -86,7 +86,7 @@ The programme aims to:
 9. Measure beneficiary satisfaction with programme services.
 10. Generate reliable evidence to support programme management, reporting, and future planning.
 
-## Project Scope
+## 8.0 Project Scope
 
 This project will develop a complete end-to-end Monitoring and Evaluation data solution covering:
 
@@ -128,7 +128,7 @@ This project will develop a complete end-to-end Monitoring and Evaluation data s
     - Impact assessment
     - Recommendations
 
-## Key Reporting Questions
+## 9.0 Key Reporting Questions
 
 - **Programme Reach**
     - How many farmers have been registered?
@@ -176,9 +176,7 @@ This project will develop a complete end-to-end Monitoring and Evaluation data s
   - Which interventions appear to have had the greatest impact?
   - What lessons learned can inform future programme implementation?
 
-## Results Framework
-
-# Results Framework
+## 10.0 Results Framework
 
 | Level          | Description                                                                                                                                                                                                                                                           |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -188,7 +186,7 @@ This project will develop a complete end-to-end Monitoring and Evaluation data s
 | **Activities** | Register farmers, conduct community needs assessments, organise and deliver farmer training, distribute agricultural inputs, conduct farm monitoring visits, administer farmer satisfaction surveys, and conduct end-of-season programme evaluations.                 |
 | **Inputs**     | Funding, programme staff, enumerators, extension officers, trainers, agricultural inputs, vehicles, mobile devices, CommCare, Python, PostgreSQL, Excel, Power BI, and internet connectivity.                                                                         |
 
-## Indicators
+## 11.0 Indicators
 
 | Indicator                                  | Definition                                                                           | Formula                                                   | Reporting Frequency | Data Source                                |
 | ------------------------------------------ | ------------------------------------------------------------------------------------ | --------------------------------------------------------- | ------------------- | ------------------------------------------ |
@@ -212,4 +210,106 @@ This project will develop a complete end-to-end Monitoring and Evaluation data s
 | Enumerator Form Completion Rate            | Percentage of assigned forms successfully submitted by enumerators.                  | (Submitted Forms ÷ Assigned Forms) × 100                  | Monthly             | CommCare Submission Logs                   |
 | Data Completeness Rate                     | Percentage of mandatory data fields completed.                                       | (Completed Required Fields ÷ Total Required Fields) × 100 | Monthly             | CommCare Forms                             |
 | Data Submission Timeliness                 | Percentage of forms submitted within the expected reporting period.                  | (On-time Submissions ÷ Total Submissions) × 100           | Monthly             | CommCare Submission Logs                   |
+
+## 12.0 Data Collection Approach
+
+The programme will use **CommCare** as the primary data collection platform. Data will be collected through a combination of case management forms and standalone survey forms to support routine monitoring and programme evaluation.
+
+### 12.1 Case Management
+
+The Farmer will serve as the primary case. Each registered farmer will have a unique case record that is created once and updated throughout the programme.
+
+#### 1. Case Registration Form
+- **Farmer Registration**
+    - Registers eligible farmers into the programme.
+    - Creates the Farmer case.
+
+#### 2. Case Follow-up Forms
+- **Training Attendance**
+    - Records participation in training sessions.
+    - Updates the Farmer case.
+
+- **Input Distribution**
+    - Records agricultural inputs distributed to farmers.
+    - Updates the Farmer case.
+
+- **Farm Monitoring Visit**
+    - Records observations made during routine farm visits.
+    - Tracks adoption of recommended practices, crop and livestock performance, and field challenges.
+    - Updates the Farmer case.
+
+### 12.2 Standalone Survey Forms
+
+- **Community Needs Assessment**
+
+Collects baseline information on agricultural challenges and community priorities.
+
+- **Farmer Satisfaction Survey**
+
+Measures farmers' satisfaction with programme services and support.
+
+- **End-of-Season Programme Evaluation**
+
+Assesses programme performance, outcomes, and lessons learned at the end of each farming season.
+
+### 12.3 Data Collection Frequency
+
+- **Farmer Registration**
+
+Conducted once for each farmer.
+
+- **Training Attendance**
+
+Conducted whenever a training session takes place.
+
+- **Input Distribution**
+
+Conducted whenever agricultural inputs are distributed.
+
+- **Farm Monitoring Visit**
+
+Conducted during scheduled monitoring visits throughout the farming season.
+
+- **Community Needs Assessment**
+
+Conducted before programme implementation and updated when necessary.
+
+- **Farmer Satisfaction Survey**
+
+Conducted towards the end of each farming season.
+
+- **End-of-Season Programme Evaluation**
+
+Conducted at the end of each farming season.
+
+### 12.4 Data Collection Personnel
+- **Enumerators**
+
+Register farmers and administer standalone surveys.
+
+- **Extension Officers**
+
+Conduct farm monitoring visits and provide technical support.
+
+- **Training Coordinators**
+
+Record training attendance.
+
+- **Logistics Officers**
+
+Record agricultural input distribution.
+
+- **M&E Team**
+
+Review submitted data, perform quality checks, and prepare reports.
+
+### 12.5 Data Flow
+
+1. Data is collected using CommCare.
+2. Data is exported from CommCare.
+3. Python cleans, validates, and transforms the raw data.
+4. Cleaned data is loaded into PostgreSQL.
+5. SQL views are created for reporting.
+6. Excel is used for operational analysis.
+7. Power BI connects to PostgreSQL to produce executive dashboards.
 
