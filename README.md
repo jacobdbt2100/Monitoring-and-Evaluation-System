@@ -66,3 +66,113 @@ To manage programme implementation effectively, GHI requires a robust Monitoring
 | Community Leaders                | Represent participating communities          | Community participation, local programme progress                     |
 | Donors                           | Provide programme funding                    | Programme outputs, outcomes, impact, accountability reports           |
 | Organisation Management          | Strategic oversight                          | Executive summaries, trends, risks, programme success                 |
+
+## Programme Goal
+
+To improve the productivity, resilience, and livelihoods of smallholder farming households through increased access to agricultural knowledge, quality farm inputs, and continuous extension support.
+
+## Programme Objectives
+
+The programme aims to:
+
+1. Register eligible smallholder farmers into the programme.
+2. Deliver agricultural training that improves farmers' knowledge and skills.
+3. Distribute quality farm inputs to eligible farmers in a timely manner.
+4. Conduct regular farm monitoring visits to support farmers and track progress.
+5. Increase the adoption of recommended crop and livestock management practices.
+6. Improve agricultural productivity among participating farmers.
+7. Increase household agricultural income.
+8. Improve household food security.
+9. Measure beneficiary satisfaction with programme services.
+10. Generate reliable evidence to support programme management, reporting, and future planning.
+
+## Project Scope
+
+This project will develop a complete end-to-end Monitoring and Evaluation data solution covering:
+
+- **Programme Design**
+    - Programme framework
+    - Results framework
+    - Indicators
+    - Data collection strategy
+
+- **Digital Data Collection**
+    - Farmer Registration (Case Creation)
+    - Training Attendance
+    - Input Distribution
+    - Farm Monitoring Visit
+    - Farmer Satisfaction Survey
+    - Community Needs Assessment
+    - End-of-Season Programme Evaluation
+
+- **Data Processing**
+    - Generate realistic sample data
+    - Clean and validate data using Python
+    - Transform and enrich data
+    - Load cleaned data into PostgreSQL
+    - Create SQL views for reporting
+
+- **Data Analysis**
+    - Operational analysis in Excel
+    - Executive dashboards in Power BI
+    - KPI tracking
+    - Trend analysis
+    - Geographic analysis
+    - Beneficiary analysis
+    - Data quality analysis
+
+- **Reporting**
+    - Programme performance
+    - Activity monitoring
+    - Outcome measurement
+    - Impact assessment
+    - Recommendations
+
+## Key Reporting Questions
+
+- **Programme Reach**
+    - How many farmers have been registered?
+    - How many farmers are actively participating in the programme?
+    - Which communities have the highest participation?
+    - What is the demographic profile of registered farmers?
+
+- **Programme Performance**
+  - Are programme activities meeting planned targets?
+  - Which locations are performing above or below expectations?
+  - What are the overall programme performance trends?
+
+- **Training**
+  - How many training sessions have been conducted?
+  - How many farmers attended training?
+  - What is the training attendance rate?
+  - Which training topics have the highest participation?
+
+- **Input Distribution**
+  - Which agricultural inputs were distributed?
+  - Were inputs distributed on time?
+  - How many farmers received agricultural inputs?
+  - Which farmers have not yet received planned inputs?
+
+- **Farm Monitoring**
+  - How many monitoring visits were completed?
+  - Which farmers missed scheduled visits?
+  - What are the most common farm challenges reported?
+  - What operational challenges are being reported during monitoring visits?
+
+- **Outcomes**
+  - What percentage of farmers adopted recommended farming practices?
+  - How have crop yields changed?
+  - How has livestock productivity changed?
+  - Has household agricultural income improved?
+  - Has household food security improved?
+
+- **Beneficiary Feedback**
+  - How satisfied are farmers with programme services?
+  - What improvements do beneficiaries recommend?
+  - What are the most common agricultural needs identified by communities?
+
+- **Programme Evaluation**
+  - Did the programme achieve its intended objectives by the end of the season?
+  - Which interventions appear to have had the greatest impact?
+  - What lessons learned can inform future programme implementation?
+
