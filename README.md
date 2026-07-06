@@ -52,7 +52,7 @@ The Green Harvest Initiative (GHI) is a fictional non-governmental organisation 
 
 To manage programme implementation effectively, GHI requires a robust Monitoring and Evaluation (M&E) system that supports digital data collection, case management, performance monitoring, and evidence-based reporting.
 
-## Stakeholders and Their Information Needs
+## Stakeholders and their Information Needs
 
 | Stakeholder                      | Role                                         | Information Needed                                                    |
 | -------------------------------- | -------------------------------------------- | --------------------------------------------------------------------- |
@@ -175,4 +175,41 @@ This project will develop a complete end-to-end Monitoring and Evaluation data s
   - Did the programme achieve its intended objectives by the end of the season?
   - Which interventions appear to have had the greatest impact?
   - What lessons learned can inform future programme implementation?
+
+## Results Framework
+
+# Results Framework
+
+| Level          | Description                                                                                                                                                                                                                                                           |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Impact**     | Improved food security, agricultural productivity, and livelihoods of smallholder farming households.                                                                                                                                                                 |
+| **Outcomes**   | Increased adoption of recommended farming practices, improved crop and livestock productivity, increased household agricultural income, and improved household food security.                                                                                         |
+| **Outputs**    | Farmers registered, training sessions conducted, farmers trained, agricultural inputs distributed, farm monitoring visits completed, community needs assessments conducted, farmer satisfaction surveys completed, and end-of-season programme evaluations completed. |
+| **Activities** | Register farmers, conduct community needs assessments, organise and deliver farmer training, distribute agricultural inputs, conduct farm monitoring visits, administer farmer satisfaction surveys, and conduct end-of-season programme evaluations.                 |
+| **Inputs**     | Funding, programme staff, enumerators, extension officers, trainers, agricultural inputs, vehicles, mobile devices, CommCare, Python, PostgreSQL, Excel, Power BI, and internet connectivity.                                                                         |
+
+## Indicators
+
+| Indicator                                  | Definition                                                                           | Formula                                                   | Reporting Frequency | Data Source                                |
+| ------------------------------------------ | ------------------------------------------------------------------------------------ | --------------------------------------------------------- | ------------------- | ------------------------------------------ |
+| Number of Farmers Registered               | Total number of farmers enrolled in the programme.                                   | Count of registered farmers                               | Monthly             | Farmer Registration                        |
+| Active Farmers                             | Number of registered farmers actively participating in programme activities.         | Count of active farmer cases                              | Monthly             | Farmer Registration, Farm Monitoring Visit |
+| Number of Training Sessions Conducted      | Total training sessions delivered during the reporting period.                       | Count of training sessions                                | Monthly             | Training Attendance                        |
+| Training Attendance Rate                   | Percentage of registered farmers who attended at least one training session.         | (Farmers Trained ÷ Registered Farmers) × 100              | Monthly             | Farmer Registration, Training Attendance   |
+| Number of Farmers Trained                  | Total farmers who attended one or more training sessions.                            | Count of unique farmers trained                           | Monthly             | Training Attendance                        |
+| Number of Farmers Receiving Inputs         | Total farmers who received programme inputs.                                         | Count of farmers receiving inputs                         | Monthly             | Input Distribution                         |
+| Input Distribution Coverage                | Percentage of registered farmers who received planned inputs.                        | (Farmers Receiving Inputs ÷ Registered Farmers) × 100     | Monthly             | Farmer Registration, Input Distribution    |
+| Number of Monitoring Visits Completed      | Total farm monitoring visits conducted.                                              | Count of completed visits                                 | Monthly             | Farm Monitoring Visit                      |
+| Monitoring Coverage                        | Percentage of active farmers visited during the reporting period.                    | (Farmers Visited ÷ Active Farmers) × 100                  | Monthly             | Farm Monitoring Visit                      |
+| Adoption Rate of Recommended Practices     | Percentage of monitored farmers implementing recommended practices.                  | (Farmers Adopting Practices ÷ Farmers Monitored) × 100    | Quarterly           | Farm Monitoring Visit                      |
+| Average Crop Yield                         | Average crop yield recorded per hectare.                                             | Total Yield ÷ Total Cultivated Area                       | Seasonal            | Farm Monitoring Visit                      |
+| Average Livestock Productivity             | Average production per livestock enterprise (e.g., milk, eggs, weight gain).         | Total Production ÷ Number of Relevant Animals             | Seasonal            | Farm Monitoring Visit                      |
+| Average Household Agricultural Income      | Average agricultural income earned by participating households.                      | Total Agricultural Income ÷ Number of Households          | Seasonal            | Farm Monitoring Visit                      |
+| Household Food Security Rate               | Percentage of households reporting adequate food availability throughout the season. | (Food Secure Households ÷ Surveyed Households) × 100      | Seasonal            | End-of-Season Programme Evaluation         |
+| Farmer Satisfaction Rate                   | Percentage of farmers satisfied with programme services.                             | (Satisfied Farmers ÷ Surveyed Farmers) × 100              | Seasonal            | Farmer Satisfaction Survey                 |
+| Community Needs Assessment Completion Rate | Percentage of target communities where needs assessments were completed.             | (Communities Assessed ÷ Target Communities) × 100         | Annual              | Community Needs Assessment                 |
+| Programme Objective Achievement Rate       | Percentage of programme objectives achieved during the reporting period.             | (Objectives Achieved ÷ Planned Objectives) × 100          | Seasonal            | End-of-Season Programme Evaluation         |
+| Enumerator Form Completion Rate            | Percentage of assigned forms successfully submitted by enumerators.                  | (Submitted Forms ÷ Assigned Forms) × 100                  | Monthly             | CommCare Submission Logs                   |
+| Data Completeness Rate                     | Percentage of mandatory data fields completed.                                       | (Completed Required Fields ÷ Total Required Fields) × 100 | Monthly             | CommCare Forms                             |
+| Data Submission Timeliness                 | Percentage of forms submitted within the expected reporting period.                  | (On-time Submissions ÷ Total Submissions) × 100           | Monthly             | CommCare Submission Logs                   |
 
