@@ -219,12 +219,14 @@ The programme will use **CommCare** as the primary data collection platform. Dat
 
 The Farmer will serve as the primary case. Each registered farmer will have a unique case record that is created once and updated throughout the programme.
 
-#### 1. Case Registration Form
+**1. Case Registration Form (Farmer Registration)**
+
 - **Farmer Registration**
     - Registers eligible farmers into the programme.
     - Creates the Farmer case.
 
-#### 2. Case Follow-up Forms (Farmer Records)
+**2. Case Follow-up Forms (Farmer Records)**
+
 - **Training Attendance**
     - Records participation in training sessions.
     - Updates the Farmer case.
