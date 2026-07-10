@@ -224,7 +224,7 @@ The Farmer will serve as the primary case. Each registered farmer will have a un
     - Registers eligible farmers into the programme.
     - Creates the Farmer case.
 
-#### 2. Case Follow-up Forms
+#### 2. Case Follow-up Forms (Farmer Records)
 - **Training Attendance**
     - Records participation in training sessions.
     - Updates the Farmer case.
@@ -238,7 +238,7 @@ The Farmer will serve as the primary case. Each registered farmer will have a un
     - Tracks adoption of recommended practices, crop and livestock performance, and field challenges.
     - Updates the Farmer case.
 
-### 12.2. Standalone Survey Forms
+### 12.2. Standalone Survey Forms (Programme Surveys)
 
 - **Community Needs Assessment**
     - Collects baseline information on agricultural challenges and community priorities.
@@ -247,9 +247,26 @@ The Farmer will serve as the primary case. Each registered farmer will have a un
     - Measures farmers' satisfaction with programme services and support.
 
 - **End-of-Season Programme Evaluation**
-    -Assesses programme performance, outcomes, and lessons learned at the end of each farming season.
+    - Assesses programme performance, outcomes, and lessons learned at the end of each farming season.
 
-### 12.3. Data Collection Frequency
+### 12.3. App Navigation
+
+*Smallholder Farmer Productivity Improvement Programme (SFPIP)*
+
+Farmer Registration
+└── Farmer Register
+
+Farmer Records
+├── Training Attendance
+├── Input Distribution
+└── Farm Monitoring Visit
+
+Programme Surveys
+├── Community Needs Assessment
+├── Farmer Satisfaction Survey
+└── End-of-Season Programme Evaluation
+
+### 12.4. Data Collection Frequency
 
 - **Farmer Registration**
     - Conducted once for each farmer.
@@ -272,7 +289,7 @@ The Farmer will serve as the primary case. Each registered farmer will have a un
 - **End-of-Season Programme Evaluation**
     - Conducted at the end of each farming season.
 
-### 12.4. Data Collection Personnel
+### 12.5. Data Collection Personnel
 - **Enumerators**: Register farmers and administer standalone surveys.
 
 - **Extension Officers**: Conduct farm monitoring visits and provide technical support.
@@ -283,7 +300,7 @@ The Farmer will serve as the primary case. Each registered farmer will have a un
 
 - **M&E Team**: Review submitted data, perform quality checks, and prepare reports.
 
-### 12.5. Data Flow
+### 12.6. Data Flow
 
 1. Data is collected using CommCare.
 2. Data is exported from CommCare.
