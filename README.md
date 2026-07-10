@@ -251,7 +251,8 @@ The Farmer will serve as the primary case. Each registered farmer will have a un
 
 ### 12.3. App Navigation
 
-*Smallholder Farmer Productivity Improvement Programme (SFPIP)*
+```text
+Smallholder Farmer Productivity Improvement Programme (SFPIP)
 
 Farmer Registration
 └── Farmer Register
@@ -265,6 +266,7 @@ Programme Surveys
 ├── Community Needs Assessment
 ├── Farmer Satisfaction Survey
 └── End-of-Season Programme Evaluation
+```
 
 ### 12.4. Data Collection Frequency
 
