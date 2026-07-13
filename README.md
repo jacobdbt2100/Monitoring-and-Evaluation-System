@@ -215,17 +215,15 @@ This project will develop a complete end-to-end Monitoring and Evaluation data s
 
 The programme will use **CommCare** as the primary data collection platform. Data will be collected through a combination of case management forms and standalone survey forms to support routine monitoring and programme evaluation.
 
-### 12.1. Case Management
+### 12.1. Case Management (Farmer Records)
 
 The Farmer will serve as the primary case. Each registered farmer will have a unique case record that is created once and updated throughout the programme.
 
-**1. Case Registration Form (Farmer Registration)**
-
-- **Farmer Register**
+**1. Case (Farmer Registration) Form**
     - Registers eligible farmers into the programme.
     - Creates the Farmer case.
 
-**2. Case Follow-up Forms (Farmer Records)**
+**2. Case Follow-up Forms**
 
 - **Training Attendance**
     - Records participation in training sessions.
@@ -256,10 +254,8 @@ The Farmer will serve as the primary case. Each registered farmer will have a un
 ```text
 Smallholder Farmer Productivity Improvement Programme (SFPIP)
 
-Farmer Registration
-└── Farmer Register
-
 Farmer Records
+├── Farmer Registration
 ├── Training Attendance
 ├── Input Distribution
 └── Farm Monitoring Visit
