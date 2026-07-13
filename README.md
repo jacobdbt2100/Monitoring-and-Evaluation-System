@@ -36,7 +36,7 @@ The programme recognises that successful implementation depends not only on deli
 | Sector                   | Agriculture                                            |
 | Programme Type           | Agricultural Development Programme                     |
 | Target Beneficiaries     | Smallholder farmers (crop and livestock)               |
-| Geographic Coverage      | 8 Local Government Areas across 2 States *(fictional)* |
+| Geographic Coverage      | 7 Communities *(fictional)*                            |
 | Programme Duration       | 3 years                                                |
 | Monitoring Frequency     | Continuous throughout each farming season              |
 | Evaluation Frequency     | End of each farming season and end of programme        |
@@ -97,7 +97,7 @@ This project will develop a complete end-to-end Monitoring and Evaluation data s
     - Data collection strategy
 
 - **Digital Data Collection**
-    - Farmer Registration (Case Creation)
+    - Farmer Register (Case Creation)
     - Training Attendance
     - Input Distribution
     - Farm Monitoring Visit
@@ -184,7 +184,7 @@ This project will develop a complete end-to-end Monitoring and Evaluation data s
 | **Outcomes**   | Increased adoption of recommended farming practices, improved crop and livestock productivity, increased household agricultural income, and improved household food security.                                                                                         |
 | **Outputs**    | Farmers registered, training sessions conducted, farmers trained, agricultural inputs distributed, farm monitoring visits completed, community needs assessments conducted, farmer satisfaction surveys completed, and end-of-season programme evaluations completed. |
 | **Activities** | Register farmers, conduct community needs assessments, organise and deliver farmer training, distribute agricultural inputs, conduct farm monitoring visits, administer farmer satisfaction surveys, and conduct end-of-season programme evaluations.                 |
-| **Inputs**     | Funding, programme staff, enumerators, extension officers, trainers, agricultural inputs, vehicles, mobile devices, CommCare, Python, PostgreSQL, Excel, Power BI, and internet connectivity.                                                                         |
+| **Inputs**     | Funding, programme staff, enumerators, extension officers, trainers, agricultural inputs, vehicles, mobile devices, data collection and analysis tools (CommCare, Python, PostgreSQL, Excel, Power BI), and internet connectivity.                                                                         |
 
 ## 11.0. Indicators
 
@@ -221,7 +221,7 @@ The Farmer will serve as the primary case. Each registered farmer will have a un
 
 **1. Case Registration Form (Farmer Registration)**
 
-- **Farmer Registration**
+- **Farmer Register**
     - Registers eligible farmers into the programme.
     - Creates the Farmer case.
 
@@ -314,3 +314,13 @@ Programme Surveys
 6. Excel is used for operational analysis.
 7. Power BI connects to PostgreSQL to produce executive dashboards.
 
+## 13.0. Synthetic Data Generation (with Python)
+
+
+
+## Data Cleaning & Validation (with Python)
+## PostgreSQL Data Model & Loading
+## SQL Analytical Queries & Views
+## Excel Operational Analysis
+## Power BI Executive Dashboard
+## Final M&E Report with Recommendations
