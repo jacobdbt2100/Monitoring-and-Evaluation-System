@@ -1,0 +1,18 @@
+1. Distribution Date
+2. Distribution Location
+3. Input Type
+ Add Choice
+Maize Seed
+Rice Seed
+Groundnut Seed
+Fertilizer
+Goat
+Rabbit
+4. Quantity of Inputs Distributed
+4(a) Maize Seed (kg)
+4(b) Rice Seed (kg)
+4(c) Groundnut Seed (kg)
+4(d) Fertilizer (kg)
+4(e) Number of Goats Distributed
+4(f) Number of Rabbits Distributed
+5. Recipient Signature

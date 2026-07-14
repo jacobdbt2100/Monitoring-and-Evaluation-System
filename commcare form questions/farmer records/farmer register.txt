@@ -1,0 +1,74 @@
+Please carefully supply farmer information! (label)
+Section 1: Farmer Identification
+1. Community (select one)
+ Add Choice
+Community_01
+Community_02
+Community_03
+Community_04
+Community_05
+Community_06
+Community_07
+2. First Name
+3. Last Name
+4. Gender (select one)
+ Add Choice
+Male
+Female
+5. Date of Birth
+6. National ID
+7. Phone Number
+8. Farmer Photograph
+Section 2: Household Information
+9. Household Size (integer > 0)
+10. Primary Occupation (select one)
+ Add Choice
+Crop Farming
+Livestock Farming
+Mixed Farming
+11. Farming Experience (Years)
+Section 3: Farm Information
+12. Farm Ownership (select one)
+ Add Choice
+Owned
+Leased
+Family Land
+13. Number of Farm Plots
+14. Primary (main) Irrigation Source (select one)
+ Select primary (main) Irrigation Source
+ Add Choice
+Rain-fed
+Borehole
+River/Stream
+Irrigation Scheme
+Dam/Reservoir
+Other
+Specify Other
+Section 4: Crops Cultivated
+15. Crops cultivated and Areas (Hectares)
+Select crops cultivated and Areas (Hectares) (select multiple)
+ Add Choice
+Groundnuts
+Maize
+Rice
+15 (a) Area under Groundnuts (Hectares) (decimal > 0)
+15 (b) Area under Maize (Hectares) (decimal > 0)
+15 (c) Area under Rice (Hectares) (decimal > 0)
+Section 5: Livestock
+16. Livestock reared and number kept (Integer)
+Select livestock reared (select multiple)
+ Add Choice
+Goats
+Rabbits
+16 (a) Number of Goats (integer > 0)
+16 (b) Number of Rabbits (integer > 0)
+Section 6: Farm Location
+17. Capture Farm GPS Location
+Section 7: Consent
+18. Farmer accepts or decline to participate in the programme
+Do you consent to participate in this programme? (select one)
+ Add Choice
+Yes
+No
+The farmer accepted to participate in the programme. Click "FINISHED" to submit. Thank you!!! (label)
+The farmer has declined to participate in the programme. Registration cannot continue. Please don't submit this form. CANCEL!!! (label)
