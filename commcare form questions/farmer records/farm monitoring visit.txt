@@ -1,0 +1,73 @@
+Section 1: Visit Information
+1. Visit Date
+2. Crop Stage
+ Add Choice
+Land Preparation
+Planting
+Vegetative Growth
+Flowering
+Harvesting
+3. Which crops were observed during this visit?
+ Add Choice
+Maize
+Rice
+Groundnuts
+4. Select crop condition
+4(a) Crop Condition - Maize
+ Add Choice
+Good
+Fair
+Poor
+4(b) Crop Condition - Rice
+ Add Choice
+Good
+Fair
+Poor
+4(c) Crop Condition - Groundnuts
+ Add Choice
+Good
+Fair
+Poor
+Section 2: Livestock Monitoring
+5. Which livestock were observed during this visit?
+ Add Choice
+Goats
+Rabbits
+6. Select livestock condition
+6(a) Goat Condition
+ Add Choice
+Good
+Fair
+Poor
+6(b) Rabbit Condition
+ Add Choice
+Good
+Fair
+Poor
+Section 3: Adoption of Recommended Practices
+7. Has the farmer adopted the recommended farming practices?
+ Add Choice
+Yes
+No
+Partially
+8. Which recommended practices have been adopted?
+ Add Choice
+Improved Seed
+Fertilizer Application
+Proper Spacing
+Timely Weeding
+Pest Management
+Improved Livestock Housing
+Section 4: Farm Challenges
+9. What challenges were observed during the visit?
+ Add Choice
+Pest Infestation
+Crop Disease
+Poor Rainfall
+Flooding
+Lack of Fertilizer
+Livestock Disease
+Feed Shortage
+No Major Challenge
+10. Additional Comments
+11. Capture Farm Photograph
