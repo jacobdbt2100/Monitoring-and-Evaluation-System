@@ -1,0 +1,54 @@
+Section 1: Survey Information
+1. Survey Date
+2. Community
+ Add Choice
+Community_01
+Community_02
+Community_03
+Community_04
+Community_05
+Community_06
+Community_07
+Section 2: Programme Participation
+3. Which programme services have you received?
+ Add Choice
+Farmer Training
+Seed Distribution
+Fertilizer Distribution
+Livestock Support
+Farm Monitoring Visits
+Section 3: Satisfaction Ratings
+4. How satisfied are you with the training provided?
+ Add Choice
+Very Satisfied
+Satisfied
+Neutral
+Dissatisfied
+Very Dissatisfied
+5. How satisfied are you with the agricultural inputs provided?
+ Add Choice
+Very Satisfied
+Satisfied
+Neutral
+Dissatisfied
+Very Dissatisfied
+ 6. How satisfied are you with the support provided during farm monitoring visits?
+ Add Choice
+Very Satisfied
+Satisfied
+Neutral
+Dissatisfied
+Very Dissatisfied
+ 7. Overall, how satisfied are you with the programme?
+ Add Choice
+Very Satisfied
+Satisfied
+Neutral
+Dissatisfied
+Very Dissatisfied
+Section 4: Feedback
+8. Would you recommend this programme to other farmers?
+ Add Choice
+Yes
+No
+9. What improvements would you like to see in future programme activities?

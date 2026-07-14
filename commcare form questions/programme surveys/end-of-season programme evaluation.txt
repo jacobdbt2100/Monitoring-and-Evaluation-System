@@ -1,0 +1,57 @@
+Section 1: Survey Information
+1. Evaluation Date
+2. Community
+ Add Choice
+Community_01
+Community_02
+Community_03
+Community_04
+Community_05
+Community_06
+Community_07
+Section 2: Agricultural Outcomes
+ 3. Compared with last season, how has your crop production changed?
+ Add Choice
+Increased Significantly
+Increased Slightly
+No Change
+Decreased Slightly
+Decreased Significantly
+ 4. Compared with last season, how has your livestock production changed?
+ Add Choice
+Increased Significantly
+Increased Slightly
+No Change
+Decreased Slightly
+Decreased Significantly
+ 5. Compared with last season, how has your agricultural income changed?
+ Add Choice
+Increased Significantly
+Increased Slightly
+No Change
+Decreased Slightly
+Decreased Significantly
+Section 3: Programme Impact
+6. To what extent did the programme help improve your farming activities?
+ Add Choice
+To a Great Extent
+To Some Extent
+Very Little
+Not at All
+7. Which programme activities had the greatest positive impact on your farming?
+ Add Choice
+Farmer Training
+Seed Distribution
+Fertilizer Distribution
+Livestock Support
+Farm Monitoring Visits
+Section 4: Future Participation
+8. Would you participate in this programme again?
+ Add Choice
+Yes
+No
+9. Would you recommend this programme to other farmers?
+ Add Choice
+Yes
+No
+10. Additional Comments
