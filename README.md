@@ -307,17 +307,30 @@ Programme Surveys
 2. Data is exported from CommCare.
 3. Python cleans, validates, and transforms the raw data.
 4. Cleaned data is loaded into PostgreSQL.
-5. SQL views are created for reporting.
+5. SQL models are created for reporting.
 6. Excel is used for operational analysis.
-7. Power BI connects to PostgreSQL to produce executive dashboards.
+7. Power BI connects to PostgreSQL to produce executive reports/dashboards.
 
-## 13.0. Synthetic Data Generation (with Python)
+## 13.0. Synthetic Data Generation (Python)
+Since this project uses a fictional agricultural programme, realistic synthetic data was generated using Python to simulate field data collected through CommCare.
+
+The synthetic data was designed to reflect common patterns observed in agricultural monitoring and evaluation programmes while remaining entirely fictional.
+
+The data generation process included:
+
+- Generating 1,000 farmer registration records.
+- Creating realistic demographic and household information.
+- Simulating crop cultivation and livestock ownership.
+- Generating farm locations within the project's fictional communities.
+- Producing unique CommCare-style identifiers and submission metadata.
+- Applying realistic distributions for communities, occupations, irrigation sources, crops, and livestock.
+- Introducing controlled data quality issues (e.g., duplicate registrations, inconsistent phone number formats, and inconsistent text capitalization) to support subsequent data cleaning and validation exercises.
 
 
-
-## Data Cleaning & Validation (with Python)
-## PostgreSQL Data Model & Loading
-## SQL Analytical Queries & Views
-## Excel Operational Analysis
-## Power BI Executive Dashboard
-## Final M&E Report with Recommendations
+## Data Cleaning & Validation (Python)
+## Data Modelling & Loading
+    ### Data Transformation (Python)
+    ### SQL Data Models
+## Data Quality Analysis
+## Programme Performance Analysis & Visualisation
+## Insights & Recommendations
