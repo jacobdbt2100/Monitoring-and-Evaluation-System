@@ -329,6 +329,7 @@ The data generation process included:
 
 ## Data Cleaning & Validation (Python)
 ## Data Modelling & Loading
+When data pipeline is involved, use pyodbc or SQLAlchemy for data loading...
     ### Data Transformation (Python)
     ### SQL Data Models
 ## Data Quality Analysis
