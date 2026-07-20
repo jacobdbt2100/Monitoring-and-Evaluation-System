@@ -335,3 +335,43 @@ When data pipeline is involved, use pyodbc or SQLAlchemy for data loading...
 ## Data Quality Analysis
 ## Programme Performance Analysis & Visualisation
 ## Insights & Recommendations
+
+## Repository Structure
+
+```text
+Monitoring-and-Evaluation-System/
+│
+├── commcare form questions/
+│   ├── farmer records/
+│   │   ├── farm monitoring visit.txt
+│   │   ├── farmer register.txt
+│   │   ├── input distribution.txt
+│   │   ├── training attendance.txt
+│   │
+│   └── programme surveys/
+│   │   ├── community needs assessment.txt
+│   │   ├── end-of-season programme evaluation.txt
+│   │   ├── farmer satisfaction survey.txt
+│
+├── dataset/
+│   ├── 01_raw/
+│   │   └── farmer_registration_raw.csv
+│   │
+│   ├── 02_cleaned/
+│   │   └── farmer_registration_clean.csv
+│   │
+│   └── 03_transformed/
+│
+├── excel reports/
+│
+├── notebooks/
+│   ├── 01_farmer_registration_data_generation.ipynb
+│   ├── 02_farmer_registration_cleaning.ipynb
+│   ├── ...
+│
+├── power bi report/
+│
+├── sql models/
+│
+└── README.md
+```
