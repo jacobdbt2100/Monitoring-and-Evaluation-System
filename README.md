@@ -328,6 +328,17 @@ The data generation process included:
 
 
 ## Data Cleaning & Validation (Python)
+
+Python was used to clean, validate, and standardize the synthetic datasets before data transformation and modelling.
+
+The cleaning process includes:
+
+- Basic data profiling;
+- Removing duplicate records;
+- Standardizing phone number formats;
+- Standardizing text capitalization; and
+- Validating GPS coordinates against the expected project area.
+
 ## Data Modelling & Loading
 When data pipeline is involved, use pyodbc or SQLAlchemy for data loading...
     ### Data Transformation (Python)
@@ -335,6 +346,11 @@ When data pipeline is involved, use pyodbc or SQLAlchemy for data loading...
 ## Data Quality Analysis
 ## Programme Performance Analysis & Visualisation
 ## Insights & Recommendations
+
+
+
+
+
 
 ## Repository Structure
 
