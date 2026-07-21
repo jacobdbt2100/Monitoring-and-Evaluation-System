@@ -311,7 +311,7 @@ Programme Surveys
 6. Excel is used for operational analysis.
 7. Power BI connects to PostgreSQL to produce executive reports/dashboards.
 
-## 13.0. Synthetic Data Generation (Python)
+## 13.0. Synthetic Data Generation
 Since this project uses a fictional agricultural programme, realistic synthetic data was generated using Python to simulate field data collected through CommCare.
 
 The synthetic data was designed to reflect common patterns observed in agricultural monitoring and evaluation programmes while remaining entirely fictional.
@@ -326,9 +326,7 @@ The data generation process included:
 - Applying realistic distributions for communities, occupations, irrigation sources, crops, and livestock.
 - Introducing controlled data quality issues (e.g., duplicate registrations, inconsistent phone number formats, and inconsistent text capitalization) to support subsequent data cleaning and validation exercises.
 
-
-## Data Cleaning & Validation (Python)
-
+## 14.0. Data Cleaning & Validation
 Python was used to clean, validate, and standardize the synthetic datasets before data transformation and modelling.
 
 The cleaning process includes:
@@ -339,20 +337,18 @@ The cleaning process includes:
 - Standardizing text capitalization; and
 - Validating GPS coordinates against the expected project area.
 
-## Data Modelling & Loading
+## 15.0. Data Transformation & Loading (Python)
 When data pipeline is involved, use pyodbc or SQLAlchemy for data loading...
-    ### Data Transformation (Python)
-    ### SQL Data Models
-## Data Quality Analysis
-## Programme Performance Analysis & Visualisation
-## Insights & Recommendations
 
+## 16.0. Data Modelling (SQL)
 
+## 17.0. Data Quality Assessment
 
+## 18.0. Programme Performance Analysis & Reporting
 
+## 19.0. Insights & Recommendations
 
-
-## Repository Structure
+## 20.0. Repository Structure
 
 ```text
 Monitoring-and-Evaluation-System/
