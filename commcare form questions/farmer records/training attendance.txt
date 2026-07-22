@@ -2,7 +2,7 @@ Section 1: Training Information
 1. Training Date
 2. Training Topic
 Select training topic
- Add Choice
+ Add Choice (select one)
 Good Agronomic Practices
 Soil Fertility Management
 Pest and Disease Management
@@ -15,15 +15,15 @@ Specify Other
 4. Trainer Name
 Section 2: Attendance
 5. Did the farmer attend the training?
- Add Choice
+ Add Choice (select one)
 Yes
 No
 6. Attendance Status
- Add Choice
+ Add Choice (select one)
 Full Attendance
 Partial Attendance
 7. Reason for Partial Attendance
- Add Choice
+ Add Choice (select one)
 Arrived Late
 Left Early
 Personal Emergency
