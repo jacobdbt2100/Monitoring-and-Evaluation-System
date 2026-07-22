@@ -1,7 +1,7 @@
 Please carefully supply farmer information! (label)
 Section 1: Farmer Identification
-1. Community (select one)
- Add Choice
+1. Community
+ Add Choice (select one)
 Community_01
 Community_02
 Community_03
@@ -11,8 +11,8 @@ Community_06
 Community_07
 2. First Name
 3. Last Name
-4. Gender (select one)
- Add Choice
+4. Gender
+ Add Choice (select one)
 Male
 Female
 5. Date of Birth
@@ -21,22 +21,22 @@ Female
 8. Farmer Photograph
 Section 2: Household Information
 9. Household Size (integer > 0)
-10. Primary Occupation (select one)
- Add Choice
+10. Primary Occupation
+ Add Choice (select one)
 Crop Farming
 Livestock Farming
 Mixed Farming
 11. Farming Experience (Years)
 Section 3: Farm Information
-12. Farm Ownership (select one)
- Add Choice
+12. Farm Ownership
+ Add Choice (select one)
 Owned
 Leased
 Family Land
 13. Number of Farm Plots
-14. Primary (main) Irrigation Source (select one)
+14. Primary (main) Irrigation Source
  Select primary (main) Irrigation Source
- Add Choice
+ Add Choice  (select one)
 Rain-fed
 Borehole
 River/Stream
@@ -46,8 +46,8 @@ Other
 Specify Other
 Section 4: Crops Cultivated
 15. Crops cultivated and Areas (Hectares)
-Select crops cultivated and Areas (Hectares) (select multiple)
- Add Choice
+Select crops cultivated and Areas (Hectares)
+ Add Choice (select multiple)
 Groundnuts
 Maize
 Rice
@@ -56,8 +56,8 @@ Rice
 15 (c) Area under Rice (Hectares) (decimal > 0)
 Section 5: Livestock
 16. Livestock reared and number kept (Integer)
-Select livestock reared (select multiple)
- Add Choice
+Select livestock reared
+ Add Choice (select multiple)
 Goats
 Rabbits
 16 (a) Number of Goats (integer > 0)
@@ -66,8 +66,8 @@ Section 6: Farm Location
 17. Capture Farm GPS Location
 Section 7: Consent
 18. Farmer accepts or decline to participate in the programme
-Do you consent to participate in this programme? (select one)
- Add Choice
+Do you consent to participate in this programme?
+ Add Choice (select one)
 Yes
 No
 The farmer accepted to participate in the programme. Click "FINISHED" to submit. Thank you!!! (label)
