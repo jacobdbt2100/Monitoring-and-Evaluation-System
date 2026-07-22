@@ -337,10 +337,10 @@ The cleaning process includes:
 - Standardizing text capitalization; and
 - Validating GPS coordinates against the expected project area.
 
-## 15.0. Data Transformation & Loading (Python)
+## 15.0. Data Transformation & Loading
 When data pipeline is involved, use pyodbc or SQLAlchemy for data loading...
 
-## 16.0. Data Modelling (SQL)
+## 16.0. Data Modelling
 
 ## 17.0. Data Quality Assessment
 
