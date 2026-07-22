@@ -71,3 +71,5 @@ Feed Shortage
 No Major Challenge
 10. Additional Comments
 11. Capture Farm Photograph
+Section 5: Farm Location
+12. Capture Monitoring Visit GPS
