@@ -312,30 +312,30 @@ Programme Surveys
 7. Power BI connects to PostgreSQL to produce executive reports/dashboards.
 
 ## 13.0. Synthetic Data Generation
-Since this project uses a fictional agricultural programme, realistic synthetic data was generated using Python to simulate field data collected through CommCare.
+
+Since this project uses a fictional agricultural programme, realistic synthetic data was generated using Python to simulate field data collected through digital data collection forms.
 
 The synthetic data was designed to reflect common patterns observed in agricultural monitoring and evaluation programmes while remaining entirely fictional.
 
 The data generation process included:
-
-- Generating 1,000 farmer registration records.
-- Creating realistic demographic and household information.
-- Simulating crop cultivation and livestock ownership.
-- Generating farm locations within the project's fictional communities.
-- Producing unique CommCare-style identifiers and submission metadata.
-- Applying realistic distributions for communities, occupations, irrigation sources, crops, and livestock.
-- Introducing controlled data quality issues (e.g., duplicate registrations, inconsistent phone number formats, and inconsistent text capitalization) to support subsequent data cleaning and validation exercises.
+- Generating Farmer Registration, Farm Monitoring Visit, Training Attendance, and Input Distribution datasets;
+- Producing realistic demographic, agricultural, and programme participation data;
+- Creating unique CommCare-style identifiers and submission metadata;
+- Preserving relationships between datasets using farmer case IDs;
+- Generating realistic GPS coordinates for farms and monitoring visits; and
+- Introducing controlled data quality issues in the Farmer Registration dataset to support subsequent data cleaning and validation exercises.
 
 ## 14.0. Data Cleaning & Validation
+
 Python was used to clean, validate, and standardize the synthetic datasets before data transformation and modelling.
 
-The cleaning process includes:
-
+The cleaning and validation process includes:
 - Basic data profiling;
 - Removing duplicate records;
-- Standardizing phone number formats;
-- Standardizing text capitalization; and
-- Validating GPS coordinates against the expected project area.
+- Standardising phone number formats;
+- Standardising text capitalization;
+- Validating GPS coordinates against the expected project area; and
+- Validating the remaining datasets before loading them into the cleaned data layer.
 
 ## 15.0. Data Transformation & Loading
 When data pipeline is involved, use pyodbc or SQLAlchemy for data loading...
@@ -353,24 +353,30 @@ When data pipeline is involved, use pyodbc or SQLAlchemy for data loading...
 ```text
 Monitoring-and-Evaluation-System/
 │
-├── commcare form questions/
+├── data collection forms/
 │   ├── farmer records/
 │   │   ├── farm monitoring visit.txt
 │   │   ├── farmer register.txt
 │   │   ├── input distribution.txt
-│   │   ├── training attendance.txt
+│   │   └── training attendance.txt
 │   │
 │   └── programme surveys/
-│   │   ├── community needs assessment.txt
-│   │   ├── end-of-season programme evaluation.txt
-│   │   ├── farmer satisfaction survey.txt
+│       ├── community needs assessment.txt
+│       ├── end-of-season programme evaluation.txt
+│       └── farmer satisfaction survey.txt
 │
 ├── dataset/
 │   ├── 01_raw/
-│   │   └── farmer_registration_raw.csv
+│   │   ├── farm_monitoring_visit_raw.csv
+│   │   ├── farmer_registration_raw.csv
+│   │   ├── input_distribution_raw.csv
+│   │   └── training_attendance_raw.csv
 │   │
 │   ├── 02_cleaned/
-│   │   └── farmer_registration_clean.csv
+│   │   ├── farm_monitoring_visit_clean.csv
+│   │   ├── farmer_registration_clean.csv
+│   │   ├── input_distribution_clean.csv
+│   │   └── training_attendance_clean.csv
 │   │
 │   └── 03_transformed/
 │
@@ -379,7 +385,13 @@ Monitoring-and-Evaluation-System/
 ├── notebooks/
 │   ├── 01_farmer_registration_data_generation.ipynb
 │   ├── 02_farmer_registration_cleaning.ipynb
-│   ├── ...
+│   ├── 03_farm_monitoring_visit_data_generation.ipynb
+│   ├── 04_farm_monitoring_visit_cleaning.ipynb
+│   ├── 05_training_attendance_data_generation.ipynb
+│   ├── 06_training_attendance_cleaning.ipynb
+│   ├── 07_input_distribution_data_generation.ipynb
+│   ├── 08_input_distribution_cleaning.ipynb
+│   └── 09_data_transformation_&_loading.ipynb
 │
 ├── power bi report/
 │
