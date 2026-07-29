@@ -338,7 +338,19 @@ The cleaning and validation process includes:
 - Validating the remaining datasets before loading them into the cleaned data layer.
 
 ## 15.0. Data Transformation & Loading
-When data pipeline is involved, use pyodbc or SQLAlchemy for data loading...
+
+Python was used to create analysis-ready datasets by deriving reusable fields before SQL modelling and reporting. This preserves lineage and makes debugging easier.
+
+The transformation process includes:
+- Loading the cleaned datasets;
+- Calculating farmer age and form completion durations;
+- Extracting latitude and longitude from GPS coordinates;
+- Joining Farmer Registration and Farm Monitoring Visit data using `form.case.@case_id`;
+- Calculating the distance between registration and monitoring visit GPS coordinates;
+- Creating a GPS validation flag based on the calculated distance; and
+- Exporting the transformed datasets to the 03_transformed layer for SQL modelling and reporting.
+
+In a production environment, transformed data would typically be loaded into a database using connectors such as **SQLAlchemy** or **pyodbc**, with pipeline orchestration managed by tools such as **Apache Airflow, Azure Data Factory (ADF)**, or cloud-native orchestration services, while large-scale data transformations may be performed using frameworks such as **dbt** or **Apache Spark**, depending on the architecture.
 
 ## 16.0. Data Modelling
 
