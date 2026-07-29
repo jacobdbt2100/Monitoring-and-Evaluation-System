@@ -357,6 +357,7 @@ In a production environment, transformed data would typically be loaded into a d
 ## 17.0. Data Quality Assessment
 
 ## 18.0. Programme Performance Analysis & Reporting
+The programme performance reports are designed to operationalise the **Results Framework** and **Indicators** defined in **Sections 10** and **11**. Each KPI and visual represents one or more programme indicators, enabling stakeholders to monitor implementation progress, assess programme performance, and support evidence-based decision-making.
 
 ## 19.0. Insights & Recommendations
 
@@ -391,6 +392,10 @@ Monitoring-and-Evaluation-System/
 │   │   └── training_attendance_clean.csv
 │   │
 │   └── 03_transformed/
+│       ├── farm_monitoring_visit_transformed.csv
+│       ├── farmer_registration_transformed.csv
+│       ├── input_distribution_transformed.csv
+│       └── training_attendance_transformed.csv
 │
 ├── excel reports/
 │
@@ -408,6 +413,15 @@ Monitoring-and-Evaluation-System/
 ├── power bi report/
 │
 ├── sql models/
+│    ├── 01_staging/
+│    │   ├── stg_farm_monitoring_visit.sql
+│    │   ├── stg_farmer_registration.sql
+│    │   ├── stg_input_distribution.sql
+│    │   └── stg_training_attendance.sql
+│    │
+│    └── 02_marts/
+│         ├── mart_field_agent_performance.sql
+│         └── mart_programme_performance.sql
 │
 └── README.md
 ```
