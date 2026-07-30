@@ -419,9 +419,16 @@ Monitoring-and-Evaluation-System/
 │    │   ├── stg_input_distribution.sql
 │    │   └── stg_training_attendance.sql
 │    │
-│    └── 02_marts/
-│         ├── mart_field_agent_performance.sql
-│         └── mart_programme_performance.sql
-│
+│    ├── 02_marts/     
+│    │   ├── mart_field_agent_performance.sql
+│    │   └── mart_programme_performance.sql
+│    │        
+│    └── database_objects_creation_scripts/
+│        ├── database_schema.sql
+│        ├── farm_monitoring_visit_transformed table.sql
+│        ├── farmer_registration_transformed table.sql
+│        ├── input_distribution_transformed table.sql
+│        └── training_attendance_transformed table.sql
+│        
 └── README.md
 ```
