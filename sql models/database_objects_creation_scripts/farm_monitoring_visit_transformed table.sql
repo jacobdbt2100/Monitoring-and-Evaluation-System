@@ -11,7 +11,7 @@ CREATE TABLE dataset_03_transformed.farm_monitoring_visit_transformed (
     livestock_observed_during_this_visit                                    TEXT,
     goat_condition                                                          TEXT,
     rabbit_condition                                                        TEXT,
-    adopted_recommended_farming_practices                                   BOOLEAN,
+    adopted_recommended_farming_practices                                   TEXT,
     adopted_practices                                                       TEXT,
     farm_challenges                                                         TEXT,
     additional_comments                                                     TEXT,
