@@ -354,10 +354,18 @@ In a production environment, transformed data would typically be loaded into a d
 
 ## 16.0. Data Modelling
 
+The data model follows a layered approach:
+
+- **Staging (`01_staging`)**: cleaned and standardized datasets exposed primarily as **views**, preserving the transformed data structure while providing a consistent interface for downstream models.
+- **Marts (`02_marts`)**: reporting-focused **tables** designed around the grain and metrics required by specific analytical outputs.
+- **Lineage**: staging models retain the underlying dataset structure where practical, with derived fields added only where required. This preserves lineage and makes debugging easier.
+- **Materialization**: views are used where lightweight, continuously reflected transformations are sufficient; tables are used for marts where stable, reusable datasets improve reporting performance and downstream access.
+- **Reporting**: marts provide the datasets used by Power BI and Excel, with each mart clearly aligned to its intended reporting purpose.
+
 ## 17.0. Data Quality Assessment
 
-## 18.0. Programme Performance Analysis & Reporting
-The programme performance reports are designed to operationalise the **Results Framework** and **Indicators** defined in **Sections 10** and **11**. Each KPI and visual represents one or more programme indicators, enabling stakeholders to monitor implementation progress, assess programme performance, and support evidence-based decision-making.
+## 18.0. Programme Overview & Performance Analysis
+The programme overview and performance reports are designed to operationalise the **Results Framework** and **Indicators** defined in **Sections 10** and **11**. Each KPI and visual represents one or more programme indicators, enabling stakeholders to monitor implementation progress, assess programme performance, and support evidence-based decision-making.
 
 ## 19.0. Insights & Recommendations
 
@@ -433,3 +441,15 @@ Monitoring-and-Evaluation-System/
 │        
 └── README.md
 ```
+
+## 21.0. Project Updates
+
+This section documents **issues, observations, and design improvements** identified during or after project implementation. Updates will be made periodically rather than for every individual observation, particularly where changes would require extensive revisions to completed components.
+
+The purpose is to preserve lessons from the current project for future implementations and avoid repeating identified issues when developing similar systems for actual programmes.
+
+### Data Collection Forms
+
+**Training Attendance**
+
+Question 5, **“Did the farmer attend the training?”**, can be omitted from the Training Attendance form. Where the form is completed only for farmers who attended, the question is redundant because attendance is already established by the submission. **Attendance Status** (Full Attendance or Partial Attendance) is sufficient for recording the level of attendance.
