@@ -362,7 +362,17 @@ The data model follows a layered approach:
 - **Materialization**: views are used where lightweight, continuously reflected transformations are sufficient; tables are used for marts where stable, reusable datasets improve reporting performance and downstream access.
 - **Reporting**: marts provide the datasets used by Power BI and Excel, with each mart clearly aligned to its intended reporting purpose.
 
-## 17.0. Data Quality Assessment
+## 17.0. ## 17.0. Data Quality Assessment
+
+Data quality was assessed using field-agent-level monitoring measures from the `mart_field_agent_kpi_and_data_quality` model.
+
+The assessment focused on:
+
+* Average GPS distance from registration location (m).
+* GPS records outside the expected range.
+* Average monitoring form completion time (minutes).
+
+The results were exported to a separate **data_quality_assessment** CSV for field-agent-level review. The assessment covers the seven field agents represented in the synthetic dataset.
 
 ## 18.0. Programme Overview & Performance Analysis
 The programme overview and performance reports are designed to operationalise the **Results Framework** and **Indicators** defined in **Sections 10** and **11**. Each KPI and visual represents one or more programme indicators, enabling stakeholders to monitor implementation progress, assess programme performance, and support evidence-based decision-making.
@@ -406,8 +416,8 @@ Monitoring-and-Evaluation-System/
 │       └── training_attendance_transformed.csv
 │
 ├── excel reports/
-│   ├── data_quality_assessment.xlsx
-│   ├── field_agent_performance.xlsx
+│   ├── data_quality_assessment.csv
+│   ├── field_agent_performance.csv
 │
 ├── notebooks/
 │   ├── 01_farmer_registration_data_generation.ipynb
