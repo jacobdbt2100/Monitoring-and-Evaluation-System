@@ -417,7 +417,7 @@ Monitoring-and-Evaluation-System/
 │
 ├── excel reports/
 │   ├── data_quality_assessment.csv
-│   ├── field_agent_performance.csv
+│   └── field_agent_performance.csv
 │
 ├── notebooks/
 │   ├── 01_farmer_registration_data_generation.ipynb
@@ -431,6 +431,7 @@ Monitoring-and-Evaluation-System/
 │   └── 09_data_transformation_&_loading.ipynb
 │
 ├── power bi report/
+│   └── smallholder_farm_productivity_programme_report.pbix
 │
 ├── sql models/
 │   ├── 01_staging/
