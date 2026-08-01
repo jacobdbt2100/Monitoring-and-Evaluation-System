@@ -1,0 +1,8 @@
+field_agent,average_gps_distance_from_registration_m,gps_outside_expected_range,average_monitoring_form_completion_minutes
+tester_01,528.83,29,4.94
+tester_02,391.15,20,4.96
+tester_03,387.83,20,4.92
+tester_04,442.11,19,4.93
+tester_05,492.55,24,5.03
+tester_06,496.35,24,4.9
+tester_07,486.24,18,4.92
