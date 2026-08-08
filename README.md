@@ -372,10 +372,71 @@ The assessment focused on:
 * GPS records outside the expected range.
 * Average monitoring form completion time (minutes).
 
+**Other Quality Checks**
+
+Periodic **sample-based checks** of monitoring photographs against the recorded crop or livestock condition can help verify that field agents correctly classify observations. AI-assisted image screening could also be used to flag photographs that appear inconsistent with the recorded observation for subsequent human verification, reducing the effort required for large-scale manual review.
+
 The results were exported to a separate **data_quality_assessment** CSV for field-agent-level review. The assessment covers the seven field agents represented in the synthetic dataset.
 
 ## 18.0. Programme Overview & Performance Analysis
+
 The programme overview and performance reports are designed to operationalise the **Results Framework** and **Indicators** defined in **Sections 10** and **11**. Each KPI and visual represents one or more programme indicators, enabling stakeholders to monitor implementation progress, assess programme performance, and support evidence-based decision-making.
+
+The Results Framework also guided the data-model requirements. Where the existing data structure did not directly support an indicator or visual, the relevant upstream data and modelling logic were reviewed and extended rather than forcing the analysis from unsuitable fields.
+
+### 18.1. Programme Overview
+
+**Farmer profile and participation**
+
+The overview uses the farmer-level `mart_programme_overview` model to summarise:
+
+* Registered farmers
+* Farmers trained
+* Farmers receiving inputs
+* Farmers monitored
+* Farmers with recorded adoption
+* Farmers by community
+* Gender distribution
+* Age distribution
+
+**Crop analysis**
+
+The `crops_cultivated` field contains multiple crop selections in a single cell, making it unsuitable for direct categorical counting. However, the separate crop-area columns provide structured fields for both farmer participation and cultivated-area analysis.
+
+Disconnected `Crop` and `Livestock` tables were therefore created in Power BI to provide clean categorical axes. Measures use the corresponding structured columns rather than counting the multi-select text fields.
+
+For crops, **total cultivated area** is the primary measure because it provides a more useful basis for programme planning, including estimation of seed and fertilizer requirements using recommended quantities per hectare. **Farmers by crop** is retained for secondary analysis or tooltips.
+
+**Livestock analysis**
+
+The same approach is applied to livestock using the structured `number_of_goats` and `number_of_rabbits` fields. **Total livestock count** is the primary measure, while **farmers by livestock** is retained for secondary analysis or tooltips.
+
+**Condition Reporting**
+
+Crop and livestock condition fields were handled separately from the main mart for reporting purposes. A Power Query **reference** of `mart_programme_performance` was created so the original mart and its existing analysis remained unchanged. The crop-condition fields (`crop_condition_maize`, `crop_condition_rice`, and `crop_condition_groundnuts`) and livestock-condition fields (`goat_condition` and `rabbit_condition`) were then unpivoted into common **Crop–Condition** and **Livestock–Condition** structures respectively. This provides cleaner categorical axes for slicers and condition visuals without introducing increasingly complex DAX measures.
+
+### 18.2. Programme Performance
+
+The `mart_programme_performance` model provides activity-level data for analysing programme implementation, including:
+
+* Training sessions conducted
+* Training attendance
+* Farmers trained
+* Input quantities distributed
+* Farm monitoring visits
+* Adoption of recommended practices
+* Crop condition
+* Livestock condition
+
+Training sessions are identified using the combination of **training date, training topic, and training venue** because the source data does not contain a dedicated session identifier. A derived training-session key allows each session to be counted once regardless of the number of farmer-level records associated with it.
+
+Input analysis uses the structured quantity fields rather than the multi-select `input_type` field. Seed and fertilizer quantities are analysed in kilograms, while livestock distributions are analysed as animal counts.
+
+### 18.3. Indicator Interpretation & Data Considerations
+
+The analysis distinguishes between **programme-level outputs**, **farmer participation**, and **activity records** to avoid treating different measures as interchangeable. For example, training sessions, attendance records, and farmers trained represent different aspects of programme implementation.
+
+The synthetic dataset also contains known limitations documented in the project notes, particularly around training-session participation. These are retained rather than hidden so that future revisions can improve the data-generation logic without altering the analytical definitions established in the current project.
 
 ## 19.0. Insights & Recommendations
 
@@ -384,6 +445,10 @@ The programme overview and performance reports are designed to operationalise th
 ```text
 Monitoring-and-Evaluation-System/
 │
+├── analyses/
+│   ├── validate_training_session_grain.sql
+│   └── validate_training_sessions_without_attendance.sql
+│ 
 ├── data collection forms/
 │   ├── farmer records/
 │   │   ├── farm monitoring visit.txt
@@ -461,8 +526,17 @@ This section documents **issues, observations, and design improvements** identif
 
 The purpose is to preserve lessons from the current project for future implementations and avoid repeating identified issues when developing similar systems for actual programmes.
 
-### Data Collection Forms
+### 21.1. Data Collection Forms
 
 **Training Attendance**
 
 Question 5, **“Did the farmer attend the training?”**, can be omitted from the Training Attendance form. Where the form is completed only for farmers who attended, the question is redundant because attendance is already established by the submission. **Attendance Status** (Full Attendance or Partial Attendance) is sufficient for recording the level of attendance.
+
+### 21.2. Synthetic Data Generation
+
+**Training Attendance**
+
+The current synthetic data generation logic should be refined to better reflect realistic training-session participation. The generated data contains **845 training sessions but only 779 training attendance records**, with **99 sessions having no recorded attendees** and some other sessions having only a very small number of farmer records.
+
+Future revisions should generate multiple farmer-level attendance records per training session, with realistic session sizes and attendance outcomes. This will produce a more credible relationship between **Training Sessions Conducted**, **Training Attendance Records**, and **Farmers Trained**.
+

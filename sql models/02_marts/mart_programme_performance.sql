@@ -35,11 +35,21 @@ SELECT
 
     -- Training information
     t.training_topic,
+    t.training_venue,
     t.attendance_status,
 
     -- Not applicable to training records.
     -- NULLs keep the same column structure required by UNION ALL.
     NULL::TEXT AS input_type,
+
+    -- Not applicable to training records.
+    -- Input quantities are populated only for input distribution records.
+    NULL::NUMERIC AS maize_seed_kg,
+    NULL::NUMERIC AS rice_seed_kg,
+    NULL::NUMERIC AS groundnut_seed_kg,
+    NULL::NUMERIC AS fertilizer_kg,
+    NULL::NUMERIC AS goats_count,
+    NULL::NUMERIC AS rabbits_count,
 
     -- Not applicable to training records.
     -- These fields support crop-condition analysis from monitoring visits.
@@ -79,10 +89,19 @@ SELECT
 
     -- Not applicable to input distribution records.
     NULL::TEXT AS training_topic,
+    NULL::TEXT AS training_venue,
     NULL::TEXT AS attendance_status,
 
     -- Input information
     i.input_type,
+
+    -- Input quantities
+    i.maize_seed_kg,
+    i.rice_seed_kg,
+    i.groundnut_seed_kg,
+    i.fertilizer_kg,
+    i.goats_count,
+    i.rabbits_count,
 
     -- Not applicable to input distribution records.
     -- These fields support crop-condition analysis from monitoring visits.
@@ -124,10 +143,20 @@ SELECT
 
     -- Not applicable to farm monitoring records.
     NULL::TEXT AS training_topic,
+    NULL::TEXT AS training_venue,
     NULL::TEXT AS attendance_status,
 
     -- Not applicable to farm monitoring records.
     NULL::TEXT AS input_type,
+
+    -- Not applicable to farm monitoring records.
+    -- Input quantities are populated only for input distribution records.
+    NULL::NUMERIC AS maize_seed_kg,
+    NULL::NUMERIC AS rice_seed_kg,
+    NULL::NUMERIC AS groundnut_seed_kg,
+    NULL::NUMERIC AS fertilizer_kg,
+    NULL::NUMERIC AS goats_count,
+    NULL::NUMERIC AS rabbits_count,
 
     -- Crop monitoring information
     m.crop_stage,
