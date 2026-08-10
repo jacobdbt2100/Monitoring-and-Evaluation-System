@@ -411,10 +411,6 @@ For crops, **total cultivated area** is the primary measure because it provides 
 
 The same approach is applied to livestock using the structured `number_of_goats` and `number_of_rabbits` fields. **Total livestock count** is the primary measure, while **farmers by livestock** is retained for secondary analysis or tooltips.
 
-**Condition Reporting**
-
-Crop and livestock condition fields were handled separately from the main mart for reporting purposes. A Power Query **reference** of `mart_programme_performance` was created so the original mart and its existing analysis remained unchanged. The crop-condition fields (`crop_condition_maize`, `crop_condition_rice`, and `crop_condition_groundnuts`) and livestock-condition fields (`goat_condition` and `rabbit_condition`) were then unpivoted into common **Crop–Condition** and **Livestock–Condition** structures respectively. This provides cleaner categorical axes for slicers and condition visuals without introducing increasingly complex DAX measures.
-
 ### 18.2. Programme Performance
 
 The `mart_programme_performance` model provides activity-level data for analysing programme implementation, including:
@@ -431,6 +427,10 @@ The `mart_programme_performance` model provides activity-level data for analysin
 Training sessions are identified using the combination of **training date, training topic, and training venue** because the source data does not contain a dedicated session identifier. A derived training-session key allows each session to be counted once regardless of the number of farmer-level records associated with it.
 
 Input analysis uses the structured quantity fields rather than the multi-select `input_type` field. Seed and fertilizer quantities are analysed in kilograms, while livestock distributions are analysed as animal counts.
+
+**Crop & Livestock Condition Reporting**
+
+Crop and livestock condition fields were handled separately from the main mart for reporting purposes. A Power Query **reference** of `mart_programme_performance` was created so the original mart and its existing analysis remained unchanged. The crop-condition fields (`crop_condition_maize`, `crop_condition_rice`, and `crop_condition_groundnuts`) and livestock-condition fields (`goat_condition` and `rabbit_condition`) were then unpivoted into common **Crop–Condition** and **Livestock–Condition** structures respectively. This provides cleaner categorical axes for slicers and condition visuals without introducing increasingly complex DAX measures.
 
 ### 18.3. Indicator Interpretation & Data Considerations
 
@@ -496,6 +496,8 @@ Monitoring-and-Evaluation-System/
 │   └── 09_data_transformation_&_loading.ipynb
 │
 ├── power bi report/
+│   ├── 01_programme overview.jpg
+│   ├── 02_programme performance.jpg
 │   └── smallholder_farm_productivity_programme_report.pbix
 │
 ├── sql models/
