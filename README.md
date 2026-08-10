@@ -541,6 +541,7 @@ Monitoring-and-Evaluation-System/
 │       └── training_attendance_transformed table.sql
 │
 ├── agriculture.jpeg
+├── PROJECT FOLDERS EASY NAVIGATION.md
 └── README.md
 ```
 
