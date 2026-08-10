@@ -227,28 +227,28 @@ The Farmer will serve as the primary case. Each registered farmer will have a un
 
 **2. Farmer Records (Case Follow-up) Forms**
 
-- **Training Attendance**
+- **Training Attendance** ([training attendance.txt](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/data%20collection%20forms/farmer%20records/training%20attendance.txt))
     - Records participation in training sessions.
     - Updates the Farmer case.
 
-- **Input Distribution**
+- **Input Distribution** ([input distribution.txt](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/data%20collection%20forms/farmer%20records/input%20distribution.txt))
     - Records agricultural inputs distributed to farmers.
     - Updates the Farmer case.
 
-- **Farm Monitoring Visit**
+- **Farm Monitoring Visit** ([farm monitoring visit.txt](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/data%20collection%20forms/farmer%20records/farm%20monitoring%20visit.txt))
     - Records observations made during routine farm visits.
     - Tracks adoption of recommended practices, crop and livestock performance, and field challenges.
     - Updates the Farmer case.
 
 ### 12.2. Programme Surveys (Standalone Survey Forms)
 
-- **Community Needs Assessment**
+- **Community Needs Assessment** ([community needs assessment.txt](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/data%20collection%20forms/programme%20surveys/community%20needs%20assessment.txt))
     - Collects baseline information on agricultural challenges and community priorities.
 
-- **Farmer Satisfaction Survey**
+- **Farmer Satisfaction Survey** ([farmer satisfaction survey.txt](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/data%20collection%20forms/programme%20surveys/farmer%20satisfaction%20survey.txt))
     - Measures farmers' satisfaction with programme services and support.
 
-- **End-of-Season Programme Evaluation**
+- **End-of-Season Programme Evaluation** ([end-of-season programme evaluation.txt](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/data%20collection%20forms/programme%20surveys/end-of-season%20programme%20evaluation.txt))
     - Assesses programme performance, outcomes, and lessons learned at the end of each farming season.
 
 ### 12.3. App Navigation
@@ -535,7 +535,9 @@ Monitoring-and-Evaluation-System/
 │       ├── farmer_registration_transformed table.sql
 │       ├── input_distribution_transformed table.sql
 │       └── training_attendance_transformed table.sql
-│        
+│
+├── agriculture.jpeg
+├── PROJECT MATERIALS.md
 └── README.md
 ```
 
