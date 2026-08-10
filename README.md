@@ -440,6 +440,22 @@ The synthetic dataset also contains known limitations documented in the project 
 
 ## 19.0. Insights & Recommendations
 
+**Key Insights**
+
+- **Programme reach:** 1,000 farmers registered; 779 trained and 834 received inputs.
+- **Adoption:** 823 farmers have recorded adoption, giving an **82% adoption rate**.
+- **Crop focus:** Maize accounts for the largest cultivated area (**2,365 ha of 5,016 ha**).
+- **Livestock Owned by Farmers:** Goats represent the larger share of recorded livestock (**6,168 of 10,766**).
+- **Training:** 845 sessions were recorded, but **99 had no recorded attendees**, highlighting an attendance/data-quality issue.
+- **Field monitoring:** 2,012 monitoring visits provide substantial coverage for assessing adoption and crop/livestock condition.
+
+**Recommendations**
+
+- Follow up on **farmers not yet trained** and investigate sessions with zero recorded attendance.
+- Use **cultivated area and livestock counts** to strengthen input and resource planning.
+- Prioritise technical follow-up where **poor crop/livestock conditions** are recorded.
+- Continue periodic **data-quality checks** and strengthen the synthetic-data generation logic in future revisions.
+
 ## 20.0. Repository Structure
 
 ```text
