@@ -314,7 +314,7 @@ Programme Surveys
 
 ## 13.0. Synthetic Data Generation
 
-Since this project uses a fictional agricultural programme, realistic synthetic data was generated using Python to simulate field data collected through digital data collection forms.
+Since this project uses a fictional agricultural programme, realistic synthetic data ([01_raw](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/tree/main/dataset/01_raw)) was generated using Python ([notebooks](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/tree/main/notebooks)) to simulate field data collected through digital data collection forms.
 
 The synthetic data was designed to reflect common patterns observed in agricultural monitoring and evaluation programmes while remaining entirely fictional.
 
@@ -328,7 +328,7 @@ The data generation process included:
 
 ## 14.0. Data Cleaning & Validation
 
-Python was used to clean, validate, and standardize the synthetic datasets before data transformation and modelling.
+Python was used to clean, validate, and standardize the synthetic datasets ([notebooks](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/tree/main/notebooks)) before data transformation and modelling.
 
 The cleaning and validation process includes:
 - Basic data profiling;
@@ -340,7 +340,7 @@ The cleaning and validation process includes:
 
 ## 15.0. Data Transformation & Loading
 
-Python was used to create analysis-ready datasets by deriving reusable fields before SQL modelling and reporting. This preserves lineage and makes debugging easier.
+Python was used to create analysis-ready datasets ([09_data_transformation_&_loading.ipynb](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/notebooks/09_data_transformation_%26_loading.ipynb)) by deriving reusable fields before SQL modelling and reporting. This preserves lineage and makes debugging easier.
 
 The transformation process includes:
 - Loading the cleaned datasets;
@@ -357,8 +357,8 @@ In a production environment, transformed data would typically be loaded into a d
 
 The data model follows a layered approach:
 
-- **Staging (`01_staging`)**: cleaned and standardized datasets exposed primarily as **views**, preserving the transformed data structure while providing a consistent interface for downstream models.
-- **Marts (`02_marts`)**: reporting-focused **tables** designed around the grain and metrics required by specific analytical outputs.
+- **Staging ([01_staging](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/tree/main/sql%20models/01_staging))**: cleaned and standardized datasets exposed primarily as **views**, preserving the transformed data structure while providing a consistent interface for downstream models.
+- **Marts ([02_marts](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/tree/main/sql%20models/02_marts))**: reporting-focused **tables** designed around the grain and metrics required by specific analytical outputs.
 - **Lineage**: staging models retain the underlying dataset structure where practical, with derived fields added only where required. This preserves lineage and makes debugging easier.
 - **Materialization**: views are used where lightweight, continuously reflected transformations are sufficient; tables are used for marts where stable, reusable datasets improve reporting performance and downstream access.
 - **Reporting**: marts provide the datasets used by Power BI and Excel, with each mart clearly aligned to its intended reporting purpose.
@@ -367,7 +367,7 @@ The data model follows a layered approach:
 
 Data quality was assessed using field-agent-level monitoring measures from the `mart_field_agent_kpi_and_data_quality` model.
 
-The assessment focused on:
+The assessment ([data_quality_assessment.csv](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/excel%20reports/data_quality_assessment.csv)) focused on:
 
 * Average GPS distance from registration location (m).
 * GPS records outside the expected range.
@@ -381,7 +381,7 @@ The results were exported to a separate **data_quality_assessment** CSV for fiel
 
 ## 18.0. Programme Overview & Performance Analysis
 
-The programme overview and performance reports are designed to operationalise the **Results Framework** and **Indicators** defined in **Sections 10** and **11**. Each KPI and visual represents one or more programme indicators, enabling stakeholders to monitor implementation progress, assess programme performance, and support evidence-based decision-making.
+The programme overview ([01_programme overview.jpg](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/power%20bi%20report/01_programme%20overview.jpg)) and performance ([02_programme performance.jpg](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/power%20bi%20report/02_programme%20performance.jpg)) reports are designed to operationalise the **Results Framework** and **Indicators** defined in **Sections 10** and **11**. Each KPI and visual represents one or more programme indicators, enabling stakeholders to monitor implementation progress, assess programme performance, and support evidence-based decision-making.
 
 The Results Framework also guided the data-model requirements. Where the existing data structure did not directly support an indicator or visual, the relevant upstream data and modelling logic were reviewed and extended rather than forcing the analysis from unsuitable fields.
 
@@ -389,7 +389,7 @@ The Results Framework also guided the data-model requirements. Where the existin
 
 **Farmer profile and participation**
 
-The overview uses the farmer-level `mart_programme_overview` model to summarise:
+The overview ([01_programme overview.jpg](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/power%20bi%20report/01_programme%20overview.jpg)) uses the farmer-level `mart_programme_overview` model to summarise:
 
 * Registered farmers
 * Farmers trained
@@ -414,7 +414,7 @@ The same approach is applied to livestock using the structured `number_of_goats`
 
 ### 18.2. Programme Performance
 
-The `mart_programme_performance` model provides activity-level data for analysing programme implementation, including:
+The `mart_programme_performance` model provides activity-level data for analysing programme implementation ([02_programme performance.jpg](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/power%20bi%20report/02_programme%20performance.jpg)), including:
 
 * Training sessions conducted
 * Training attendance
@@ -433,13 +433,17 @@ Input analysis uses the structured quantity fields rather than the multi-select 
 
 Crop and livestock condition fields were handled separately from the main mart for reporting purposes. A Power Query **reference** of `mart_programme_performance` was created so the original mart and its existing analysis remained unchanged. The crop-condition fields (`crop_condition_maize`, `crop_condition_rice`, and `crop_condition_groundnuts`) and livestock-condition fields (`goat_condition` and `rabbit_condition`) were then unpivoted into common **Crop–Condition** and **Livestock–Condition** structures respectively. This provides cleaner categorical axes for slicers and condition visuals without introducing increasingly complex DAX measures.
 
-### 18.3. Indicator Interpretation & Data Considerations
+### 18.3. Data Limitations
 
-The analysis distinguishes between **programme-level outputs**, **farmer participation**, and **activity records** to avoid treating different measures as interchangeable. For example, training sessions, attendance records, and farmers trained represent different aspects of programme implementation.
-
-The synthetic dataset also contains known limitations documented in the project notes, particularly around training-session participation. These are retained rather than hidden so that future revisions can improve the data-generation logic without altering the analytical definitions established in the current project.
+The synthetic dataset contains known limitations documented in the project notes, particularly around training-session participation. These are retained rather than hidden so that future revisions can improve the data-generation logic without altering the analytical definitions established in the current project.
 
 ## 19.0. Insights & Recommendations
+
+**Key Findings Visualised:**
+
+<img src="https://raw.githubusercontent.com/jacobdbt2100/Monitoring-and-Evaluation-System/main/power%20bi%20report/01_programme%20overview.jpg" width="1200">
+
+<img src="https://raw.githubusercontent.com/jacobdbt2100/Monitoring-and-Evaluation-System/main/power%20bi%20report/02_programme%20performance.jpg" width="1200">
 
 **Key Insights**
 
@@ -537,7 +541,6 @@ Monitoring-and-Evaluation-System/
 │       └── training_attendance_transformed table.sql
 │
 ├── agriculture.jpeg
-├── PROJECT MATERIALS.md
 └── README.md
 ```
 
