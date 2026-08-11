@@ -24,6 +24,6 @@ Interactive programme overview and performance dashboards for monitoring and rep
 [power bi report](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/tree/main/power%20bi%20report)
 
 ## SQL Models
-SQL scripts used to build staging and mart(analytical and reporting) data models.
+SQL scripts used to build staging and mart (analytical and reporting) data models.
 
 [sql models](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/tree/main/sql%20models)
