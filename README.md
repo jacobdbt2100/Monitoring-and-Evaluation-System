@@ -20,7 +20,7 @@ The solution uses **CommCare** for data collection, **Python** for data processi
 
 ## 2.0. Programme Background
 
-The **SFPP** is a fictional agricultural development programme designed for this project.
+The **SFPP** is a fictional agricultural development programme covering seven communities, designed for this project.
 
 ## 3.0. Monitoring & Evaluation System Scope
 
