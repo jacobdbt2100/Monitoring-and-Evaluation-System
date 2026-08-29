@@ -1,224 +1,41 @@
 # Monitoring and Evaluation System for a Smallholder Farm Productivity Programme
+
+Monitoring & Evaluation | CommCare | Python | PostgreSQL | SQL | Excel | Power BI
 ___
 
 ## 1.0. Problem Statement
 
-Smallholder farmers play a significant role in agricultural production, yet many face challenges that limit productivity and household income. These challenges include limited access to quality farm inputs, inadequate technical knowledge, poor adoption of improved farming practices, pests and diseases, and inconsistent extension support.
+The **Smallholder Farm Productivity Programme (SFPP)** supports farmers through registration, agricultural training, input distribution, and extension services.
 
-To address these challenges, an agricultural development programme is implemented to register farmers, provide agricultural training, distribute farm inputs, and conduct regular farm monitoring visits. While these activities are expected to improve farming practices and productivity, programme managers often struggle to determine whether resources are reaching the intended beneficiaries, activities are implemented as planned, and the programme is achieving its intended outcomes.
+This project develops an end-to-end **Monitoring & Evaluation system** to help programme teams:
 
-Without a structured monitoring and evaluation system, it becomes difficult to:
+* Track programme implementation and beneficiary reach
+* Monitor performance against targets
+* Measure programme outputs and outcomes
+* Assess beneficiary satisfaction and community needs
+* Identify implementation and data-quality issues
+* Support evidence-based programme decisions and reporting
 
-- Track programme implementation across communities.
-- Monitor individual farmers throughout the programme.
-- Measure key performance indicators consistently.
-- Assess farmer satisfaction with programme services.
-- Understand community agricultural needs.
-- Evaluate whether programme objectives are being achieved.
-- Produce timely reports for management and donors to support evidence-based decision-making.
-
-This project develops an end-to-end monitoring and evaluation system that uses CommCare for digital data collection and case management, Python for data cleaning and transformation, PostgreSQL for data storage, Excel for operational analysis, and Power BI for executive reporting. The system enables programme managers to monitor activities, measure outcomes, evaluate programme performance, and make data-driven decisions to improve future interventions.
+The solution uses **CommCare** for data collection, **Python** for data processing, **PostgreSQL/SQL** for analysis, and **Power BI** for reporting.
 
 ## 2.0. Programme Background
 
-The **Smallholder Farm Productivity Programme (SFPP)** is a fictional agricultural development programme designed for this portfolio project. It aims to improve the productivity and livelihoods of smallholder farming households by increasing access to agricultural knowledge, quality farm inputs, and extension support.
+The **SFPP** is a fictional agricultural development programme designed for this project.
 
-The programme operates across selected rural communities and targets farmers who cultivate crops and/or rear livestock as their primary source of livelihood. It adopts a holistic approach by combining farmer registration, capacity building, farm input support, and continuous field monitoring throughout each farming season.
+## 3.0. Monitoring & Evaluation System Scope
 
-To ensure effective implementation, programme staff regularly collect data on beneficiary registration, training participation, input distribution, farm visits, and programme outcomes using digital data collection tools. Additional surveys are conducted to understand community needs, assess farmer satisfaction, and evaluate programme performance at the end of each farming season.
+- Data Collection
+- Data Processing
+- Data Analysis
+- Reporting
 
-The programme recognises that successful implementation depends not only on delivering activities but also on measuring whether those activities lead to meaningful improvements in farming practices, agricultural productivity, household income, and food security. An integrated monitoring and evaluation system is therefore required to support routine monitoring, performance reporting, and evidence-based decision-making.
-
-## 3.0. Programme Summary
-
-| Item                     | Description                                            |
-| ------------------------ | ------------------------------------------------------ |
-| Programme Name           | Smallholder Farm Productivity Programme (SFPP)         |
-| Sector                   | Agriculture                                            |
-| Programme Type           | Agricultural Development Programme                     |
-| Target Beneficiaries     | Smallholder farmers (crop and livestock)               |
-| Geographic Coverage      | 7 Communities *(fictional)*                            |
-| Programme Duration       | 3 years                                                |
-| Monitoring Frequency     | Continuous throughout each farming season              |
-| Evaluation Frequency     | End of each farming season and end of programme        |
-| Data Collection Platform | CommCare                                               |
-| Data Storage             | PostgreSQL                                             |
-| Data Processing          | Python                                                 |
-| Operational Analysis     | Excel                                                  |
-| Executive Reporting      | Power BI                                               |
-
-## 4.0. Implementing Organisation
-
-The Green Harvest Initiative (GHI) is a fictional non-governmental organisation implementing the Smallholder Farm Productivity Programme (SFPP). The organisation works with rural farming communities to improve agricultural productivity, strengthen household livelihoods, and promote sustainable farming practices through training, input support, and extension services.
-
-To manage programme implementation effectively, GHI requires a robust Monitoring and Evaluation (M&E) system that supports digital data collection, case management, performance monitoring, and evidence-based reporting.
-
-## 5.0. Stakeholders and their Information Needs
-
-| Stakeholder                      | Role                                         | Information Needed                                                    |
-| -------------------------------- | -------------------------------------------- | --------------------------------------------------------------------- |
-| Programme Manager                | Oversees programme implementation            | Overall programme performance, KPIs, progress against targets         |
-| M&E Manager                      | Manages monitoring and evaluation activities | Data quality, indicator performance, reporting, survey completion     |
-| Field Supervisors                | Supervise field teams                        | Enumerator performance, completed visits, pending activities          |
-| Enumerators / Extension Officers | Collect field data                           | Assigned farmers, scheduled visits, submitted forms                   |
-| Logistics Officer                | Coordinates input distribution               | Stock distribution records, beneficiaries served, remaining inventory |
-| Training Coordinator             | Organises farmer training                    | Attendance, participation, training coverage                          |
-| Farmers                          | Programme beneficiaries                      | Training, farm inputs, advisory support                               |
-| Community Leaders                | Represent participating communities          | Community participation, local programme progress                     |
-| Donors                           | Provide programme funding                    | Programme outputs, outcomes, impact, accountability reports           |
-| Organisation Management          | Strategic oversight                          | Executive summaries, trends, risks, programme success                 |
-
-## 6.0. Programme Goal
-
-To improve the productivity, resilience, and livelihoods of smallholder farming households through increased access to agricultural knowledge, quality farm inputs, and continuous extension support.
-
-## 7.0. Programme Objectives
-
-The programme aims to:
-
-1. Register eligible smallholder farmers into the programme.
-2. Deliver agricultural training that improves farmers' knowledge and skills.
-3. Distribute quality farm inputs to eligible farmers in a timely manner.
-4. Conduct regular farm monitoring visits to support farmers and track progress.
-5. Increase the adoption of recommended crop and livestock management practices.
-6. Improve agricultural productivity among participating farmers.
-7. Increase household agricultural income.
-8. Improve household food security.
-9. Measure beneficiary satisfaction with programme services.
-10. Generate reliable evidence to support programme management, reporting, and future planning.
-
-## 8.0. Project Scope
-
-This project will develop a complete end-to-end Monitoring and Evaluation data solution covering:
-
-- **Programme Design**
-    - Programme framework
-    - Results framework
-    - Indicators
-    - Data collection strategy
-
-- **Digital Data Collection**
-    - Farmer Register (Case Creation)
-    - Training Attendance
-    - Input Distribution
-    - Farm Monitoring Visit
-    - Farmer Satisfaction Survey
-    - Community Needs Assessment
-    - End-of-Season Programme Evaluation
-
-- **Data Processing**
-    - Generate realistic sample data
-    - Clean and validate data using Python
-    - Transform and enrich data
-    - Load cleaned data into PostgreSQL
-    - Create SQL views for reporting
-
-- **Data Analysis**
-    - Operational analysis in Excel
-    - Executive dashboards in Power BI
-    - KPI tracking
-    - Trend analysis
-    - Geographic analysis
-    - Beneficiary analysis
-    - Data quality analysis
-
-- **Reporting**
-    - Programme performance
-    - Activity monitoring
-    - Outcome measurement
-    - Impact assessment
-    - Recommendations
-
-## 9.0. Key Reporting Questions
-
-- **Programme Reach**
-    - How many farmers have been registered?
-    - How many farmers are actively participating in the programme?
-    - Which communities have the highest participation?
-    - What is the demographic profile of registered farmers?
-
-- **Programme Performance**
-  - Are programme activities meeting planned targets?
-  - Which locations are performing above or below expectations?
-  - What are the overall programme performance trends?
-
-- **Training**
-  - How many training sessions have been conducted?
-  - How many farmers attended training?
-  - What is the training attendance rate?
-  - Which training topics have the highest participation?
-
-- **Input Distribution**
-  - Which agricultural inputs were distributed?
-  - Were inputs distributed on time?
-  - How many farmers received agricultural inputs?
-  - Which farmers have not yet received planned inputs?
-
-- **Farm Monitoring**
-  - How many monitoring visits were completed?
-  - Which farmers missed scheduled visits?
-  - What are the most common farm challenges reported?
-  - What operational challenges are being reported during monitoring visits?
-
-- **Outcomes**
-  - What percentage of farmers adopted recommended farming practices?
-  - How have crop yields changed?
-  - How has livestock productivity changed?
-  - Has household agricultural income improved?
-  - Has household food security improved?
-
-- **Beneficiary Feedback**
-  - How satisfied are farmers with programme services?
-  - What improvements do beneficiaries recommend?
-  - What are the most common agricultural needs identified by communities?
-
-- **Programme Evaluation**
-  - Did the programme achieve its intended objectives by the end of the season?
-  - Which interventions appear to have had the greatest impact?
-  - What lessons learned can inform future programme implementation?
-
-## 10.0. Results Framework
-
-| Level          | Description                                                                                                                                                                                                                                                           |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Impact**     | Improved food security, agricultural productivity, and livelihoods of smallholder farming households.                                                                                                                                                                 |
-| **Outcomes**   | Increased adoption of recommended farming practices, improved crop and livestock productivity, increased household agricultural income, and improved household food security.                                                                                         |
-| **Outputs**    | Farmers registered, training sessions conducted, farmers trained, agricultural inputs distributed, farm monitoring visits completed, community needs assessments conducted, farmer satisfaction surveys completed, and end-of-season programme evaluations completed. |
-| **Activities** | Register farmers, conduct community needs assessments, organise and deliver farmer training, distribute agricultural inputs, conduct farm monitoring visits, administer farmer satisfaction surveys, and conduct end-of-season programme evaluations.                 |
-| **Inputs**     | Funding, programme staff, enumerators, extension officers, trainers, agricultural inputs, vehicles, mobile devices, data collection and analysis tools (CommCare, Python, PostgreSQL, Excel, Power BI), and internet connectivity.                                                                         |
-
-## 11.0. Indicators
-
-| Indicator                                  | Definition                                                                           | Formula                                                   | Reporting Frequency | Data Source                                |
-| ------------------------------------------ | ------------------------------------------------------------------------------------ | --------------------------------------------------------- | ------------------- | ------------------------------------------ |
-| Number of Farmers Registered               | Total number of farmers enrolled in the programme.                                   | Count of registered farmers                               | Monthly             | Farmer Registration                        |
-| Active Farmers                             | Number of registered farmers actively participating in programme activities.         | Count of active farmer cases                              | Monthly             | Farmer Registration, Farm Monitoring Visit |
-| Number of Training Sessions Conducted      | Total training sessions delivered during the reporting period.                       | Count of training sessions                                | Monthly             | Training Attendance                        |
-| Training Attendance Rate                   | Percentage of registered farmers who attended at least one training session.         | (Farmers Trained ÷ Registered Farmers) × 100              | Monthly             | Farmer Registration, Training Attendance   |
-| Number of Farmers Trained                  | Total farmers who attended one or more training sessions.                            | Count of unique farmers trained                           | Monthly             | Training Attendance                        |
-| Number of Farmers Receiving Inputs         | Total farmers who received programme inputs.                                         | Count of farmers receiving inputs                         | Monthly             | Input Distribution                         |
-| Input Distribution Coverage                | Percentage of registered farmers who received planned inputs.                        | (Farmers Receiving Inputs ÷ Registered Farmers) × 100     | Monthly             | Farmer Registration, Input Distribution    |
-| Number of Monitoring Visits Completed      | Total farm monitoring visits conducted.                                              | Count of completed visits                                 | Monthly             | Farm Monitoring Visit                      |
-| Monitoring Coverage                        | Percentage of active farmers visited during the reporting period.                    | (Farmers Visited ÷ Active Farmers) × 100                  | Monthly             | Farm Monitoring Visit                      |
-| Adoption Rate of Recommended Practices     | Percentage of monitored farmers implementing recommended practices.                  | (Farmers Adopting Practices ÷ Farmers Monitored) × 100    | Quarterly           | Farm Monitoring Visit                      |
-| Average Crop Yield                         | Average crop yield recorded per hectare.                                             | Total Yield ÷ Total Cultivated Area                       | Seasonal            | Farm Monitoring Visit                      |
-| Average Livestock Productivity             | Average production per livestock enterprise (e.g., milk, eggs, weight gain).         | Total Production ÷ Number of Relevant Animals             | Seasonal            | Farm Monitoring Visit                      |
-| Average Household Agricultural Income      | Average agricultural income earned by participating households.                      | Total Agricultural Income ÷ Number of Households          | Seasonal            | Farm Monitoring Visit                      |
-| Household Food Security Rate               | Percentage of households reporting adequate food availability throughout the season. | (Food Secure Households ÷ Surveyed Households) × 100      | Seasonal            | End-of-Season Programme Evaluation         |
-| Farmer Satisfaction Rate                   | Percentage of farmers satisfied with programme services.                             | (Satisfied Farmers ÷ Surveyed Farmers) × 100              | Seasonal            | Farmer Satisfaction Survey                 |
-| Community Needs Assessment Completion Rate | Percentage of target communities where needs assessments were completed.             | (Communities Assessed ÷ Target Communities) × 100         | Annual              | Community Needs Assessment                 |
-| Programme Objective Achievement Rate       | Percentage of programme objectives achieved during the reporting period.             | (Objectives Achieved ÷ Planned Objectives) × 100          | Seasonal            | End-of-Season Programme Evaluation         |
-| Enumerator Form Completion Rate            | Percentage of assigned forms successfully submitted by enumerators.                  | (Submitted Forms ÷ Assigned Forms) × 100                  | Monthly             | CommCare Submission Logs                   |
-| Data Completeness Rate                     | Percentage of mandatory data fields completed.                                       | (Completed Required Fields ÷ Total Required Fields) × 100 | Monthly             | CommCare Forms                             |
-| Data Submission Timeliness                 | Percentage of forms submitted within the expected reporting period.                  | (On-time Submissions ÷ Total Submissions) × 100           | Monthly             | CommCare Submission Logs                   |
-
-## 12.0. Data Collection Approach
+## 4.0. Data Collection Approach
 
 The programme will use **CommCare** as the primary data collection platform. Data will be collected through a combination of case management forms and standalone survey forms to support routine monitoring and programme evaluation.
 
-### 12.1. Farmer Records (Case Management)
+### 4.1. Farmer Records (Case Management)
 
-The Farmer will serve as the primary case. Each registered farmer will have a unique case record that is created once and updated throughout the programme.
+Each registered farmer has a unique case record that is created once and updated throughout the programme.
 
 **1. Farmer Register (Case Creation) Form** ([farmer register.txt](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/data%20collection%20forms/farmer%20records/farmer%20register.txt))
 
@@ -240,7 +57,7 @@ The Farmer will serve as the primary case. Each registered farmer will have a un
     - Tracks adoption of recommended practices, crop and livestock performance, and field challenges.
     - Updates the Farmer case.
 
-### 12.2. Programme Surveys (Standalone Survey Forms)
+### 4.2. Programme Surveys (Standalone Survey Forms)
 
 - **Community Needs Assessment** ([community needs assessment.txt](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/data%20collection%20forms/programme%20surveys/community%20needs%20assessment.txt))
     - Collects baseline information on agricultural challenges and community priorities.
@@ -251,7 +68,7 @@ The Farmer will serve as the primary case. Each registered farmer will have a un
 - **End-of-Season Programme Evaluation** ([end-of-season programme evaluation.txt](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/data%20collection%20forms/programme%20surveys/end-of-season%20programme%20evaluation.txt))
     - Assesses programme performance, outcomes, and lessons learned at the end of each farming season.
 
-### 12.3. App Navigation
+### 4.3. App Navigation
 
 ```text
 Smallholder Farmer Productivity Improvement Programme (SFPIP)
@@ -268,51 +85,7 @@ Programme Surveys
 └── End-of-Season Programme Evaluation
 ```
 
-### 12.4. Data Collection Frequency
-
-- **Farmer Register**
-    - Conducted once for each farmer.
-
-- **Training Attendance**
-    - Conducted whenever a training session takes place.
-
-- **Input Distribution**
-    - Conducted whenever agricultural inputs are distributed.
-
-- **Farm Monitoring Visit**
-    - Conducted during scheduled monitoring visits throughout the farming season.
-
-- **Community Needs Assessment**
-    - Conducted before programme implementation and updated when necessary.
-
-- **Farmer Satisfaction Survey**
-    - Conducted towards the end of each farming season.
-
-- **End-of-Season Programme Evaluation**
-    - Conducted at the end of each farming season.
-
-### 12.5. Data Collection Personnel
-- **Enumerators**: Register farmers and administer standalone surveys.
-
-- **Extension Officers**: Conduct farm monitoring visits and provide technical support.
-
-- **Training Coordinators**: Record training attendance.
-
-- **Logistics Officers**: Record agricultural input distribution.
-
-- **M&E Team**: Review submitted data, perform quality checks, and prepare reports.
-
-### 12.6. Data Flow
-
-1. Data is collected using CommCare.
-2. Data is exported from CommCare.
-3. Python cleans, validates, and transforms the raw data.
-4. Cleaned data is loaded into PostgreSQL.
-5. SQL models are created for reporting.
-6. Excel is used for operational analysis.
-7. Power BI connects to PostgreSQL to produce executive reports/dashboards.
-
-## 13.0. Synthetic Data Generation
+## 5.0. Synthetic Data Generation
 
 Since this project uses a fictional agricultural programme, realistic synthetic data ([01_raw](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/tree/main/dataset/01_raw)) was generated using Python ([notebooks](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/tree/main/notebooks)) to simulate field data collected through digital data collection forms.
 
@@ -326,7 +99,7 @@ The data generation process included:
 - Generating realistic GPS coordinates for farms and monitoring visits; and
 - Introducing controlled data quality issues in the Farmer Registration dataset to support subsequent data cleaning and validation exercises.
 
-## 14.0. Data Cleaning & Validation
+## 6.0. Data Cleaning & Validation
 
 Python was used to clean, validate, and standardize the synthetic datasets ([notebooks](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/tree/main/notebooks)) before data transformation and modelling.
 
@@ -338,7 +111,7 @@ The cleaning and validation process includes:
 - Validating GPS coordinates against the expected project area; and
 - Validating the remaining datasets before loading them into the cleaned data layer.
 
-## 15.0. Data Transformation & Loading
+## 7.0. Data Transformation & Loading
 
 Python was used to create analysis-ready datasets ([09_data_transformation_&_loading.ipynb](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/notebooks/09_data_transformation_%26_loading.ipynb)) by deriving reusable fields before SQL modelling and reporting. This preserves lineage and makes debugging easier.
 
@@ -351,9 +124,7 @@ The transformation process includes:
 - Creating a GPS validation flag based on the calculated distance; and
 - Exporting the transformed datasets to the 03_transformed layer for SQL modelling and reporting.
 
-In a production environment, transformed data would typically be loaded into a database using connectors such as **SQLAlchemy** or **pyodbc**, with pipeline orchestration managed by tools such as **Apache Airflow, Azure Data Factory (ADF)**, or cloud-native orchestration services, while large-scale data transformations may be performed using frameworks such as **dbt** or **Apache Spark**, depending on the architecture.
-
-## 16.0. Data Modelling
+## 8.0. Data Modelling
 
 The data model follows a layered approach:
 
@@ -363,7 +134,7 @@ The data model follows a layered approach:
 - **Materialization**: views are used where lightweight, continuously reflected transformations are sufficient; tables are used for marts where stable, reusable datasets improve reporting performance and downstream access.
 - **Reporting**: marts provide the datasets used by Power BI and Excel, with each mart clearly aligned to its intended reporting purpose.
 
-## 17.0. Data Quality Assessment
+## 9.0. Data Quality Assessment
 
 Data quality was assessed using field-agent-level monitoring measures from the `mart_field_agent_kpi_and_data_quality` model.
 
@@ -375,17 +146,15 @@ The assessment ([data_quality_assessment.csv](https://github.com/jacobdbt2100/Mo
 
 **Other Quality Checks**
 
-Periodic **sample-based checks** of monitoring photographs against the recorded crop or livestock condition can help verify that field agents correctly classify observations. AI-assisted image screening could also be used to flag photographs that appear inconsistent with the recorded observation for subsequent human verification, reducing the effort required for large-scale manual review.
+Periodic **sample-based checks** of monitoring photographs against the recorded crop or livestock condition can help verify that field agents correctly classify observations.
 
 The results were exported to a separate **data_quality_assessment** CSV for field-agent-level review. The assessment covers the seven field agents represented in the synthetic dataset.
 
-## 18.0. Programme Overview & Performance Analysis
+## 10.0. Programme Overview & Performance Analysis
 
-The programme overview ([01_programme overview.jpg](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/power%20bi%20report/01_programme%20overview.jpg)) and performance ([02_programme performance.jpg](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/power%20bi%20report/02_programme%20performance.jpg)) reports are designed to operationalise the **Results Framework** and **Indicators** defined in **Sections 10** and **11**. Each KPI and visual represents one or more programme indicators, enabling stakeholders to monitor implementation progress, assess programme performance, and support evidence-based decision-making.
+The programme overview ([01_programme overview.jpg](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/power%20bi%20report/01_programme%20overview.jpg)) and performance ([02_programme performance.jpg](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/power%20bi%20report/02_programme%20performance.jpg)) reports provide a summary of programme results and performance.
 
-The Results Framework also guided the data-model requirements. Where the existing data structure did not directly support an indicator or visual, the relevant upstream data and modelling logic were reviewed and extended rather than forcing the analysis from unsuitable fields.
-
-### 18.1. Programme Overview
+### 10.1. Programme Overview
 
 **Farmer profile and participation**
 
@@ -412,7 +181,7 @@ For crops, **total cultivated area** is the primary measure because it provides 
 
 The same approach is applied to livestock using the structured `number_of_goats` and `number_of_rabbits` fields. **Total livestock count** is the primary measure, while **farmers by livestock** is retained for secondary analysis or tooltips.
 
-### 18.2. Programme Performance
+### 10.2. Programme Performance
 
 The `mart_programme_performance` model provides activity-level data for analysing programme implementation ([02_programme performance.jpg](https://github.com/jacobdbt2100/Monitoring-and-Evaluation-System/blob/main/power%20bi%20report/02_programme%20performance.jpg)), including:
 
@@ -433,11 +202,11 @@ Input analysis uses the structured quantity fields rather than the multi-select 
 
 Crop and livestock condition fields were handled separately from the main mart for reporting purposes. A Power Query **reference** of `mart_programme_performance` was created so the original mart and its existing analysis remained unchanged. The crop-condition fields (`crop_condition_maize`, `crop_condition_rice`, and `crop_condition_groundnuts`) and livestock-condition fields (`goat_condition` and `rabbit_condition`) were then unpivoted into common **Crop–Condition** and **Livestock–Condition** structures respectively. This provides cleaner categorical axes for slicers and condition visuals without introducing increasingly complex DAX measures.
 
-### 18.3. Data Limitations
+### 10.3. Data Limitations
 
 The synthetic dataset contains known limitations documented in the project notes, particularly around training-session participation. These are retained rather than hidden so that future revisions can improve the data-generation logic without altering the analytical definitions established in the current project.
 
-## 19.0. Insights & Recommendations
+## 11.0. Insights & Recommendations
 
 **Key Findings Visualised:**
 
@@ -461,7 +230,7 @@ The synthetic dataset contains known limitations documented in the project notes
 - Prioritise technical follow-up where **poor crop/livestock conditions** are recorded.
 - Continue periodic **data-quality checks** and strengthen the synthetic-data generation logic in future revisions.
 
-## 20.0. Repository Structure
+## 12.0. Repository Structure
 
 ```text
 Monitoring-and-Evaluation-System/
@@ -545,19 +314,19 @@ Monitoring-and-Evaluation-System/
 └── README.md
 ```
 
-## 21.0. Project Updates
+## 13.0. Project Updates
 
 This section documents **issues, observations, and design improvements** identified during or after project implementation. Updates will be made periodically rather than for every individual observation, particularly where changes would require extensive revisions to completed components.
 
 The purpose is to preserve lessons from the current project for future implementations and avoid repeating identified issues when developing similar systems for actual programmes.
 
-### 21.1. Data Collection Forms
+### 13.1. Data Collection Forms
 
 **Training Attendance**
 
 Question 5, **“Did the farmer attend the training?”**, can be omitted from the Training Attendance form. Where the form is completed only for farmers who attended, the question is redundant because attendance is already established by the submission. **Attendance Status** (Full Attendance or Partial Attendance) is sufficient for recording the level of attendance.
 
-### 21.2. Synthetic Data Generation
+### 13.2. Synthetic Data Generation
 
 **Training Attendance**
 
@@ -565,3 +334,6 @@ The current synthetic data generation logic should be refined to better reflect 
 
 Future revisions should generate multiple farmer-level attendance records per training session, with realistic session sizes and attendance outcomes. This will produce a more credible relationship between **Training Sessions Conducted**, **Training Attendance Records**, and **Farmers Trained**.
 
+### 13.3. Date Slicer
+
+Enable Filtering by Follow-Up Date
